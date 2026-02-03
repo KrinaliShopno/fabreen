@@ -5147,7 +5147,7 @@ section.error-404 .page-content p {
 
 
 
-
+/* hitarthi header dropdown css add */
 
 :root {
     --primary-red: #42AEB0;
@@ -5290,6 +5290,7 @@ section.error-404 .page-content p {
         transform: translateY(0);
     }
 }
+/* hitarthi header dropdown css end */
 
 
 
@@ -5325,8 +5326,7 @@ section.error-404 .page-content p {
 
 
 
-
-
+/* hitarthi conntact us css add */
 .widget-contact-action {
     margin-bottom: 30px;
 }
@@ -5389,3 +5389,4 @@ section.error-404 .page-content p {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
+/* hitarthi conntact us css end *
