@@ -551,7 +551,7 @@ label {
 }
 
 .ttm_single_image-wrapper.imagestyle-two .ttm_single_image_text:before {
-    background-color: #db2d46;
+    background-color: #42AEB0;;
     -webkit-mask: url(../images/image-arrow.svg) no-repeat 100% 100%;
     -webkit-mask-box-image: url(../images/image-arrow.svg);
     content: '';
@@ -5059,4 +5059,333 @@ section.error-404 .page-content p {
     position: absolute;
     left: 0;
     top: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --primary-red: #42AEB0;
+    --text-dark: #2d3436;
+    --border-color: #f1f2f6;
+}
+
+.mega-dropdown-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 260px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 1000;
+    border: 1px solid var(--border-color);
+    margin-top: 10px;
+    overflow: visible;
+    transition: width 0.3s ease;
+}
+
+.mega-dropdown-box.expanded {
+    width: 700px;
+}
+
+.mega-dropdown-box.is-visible {
+    display: block;
+}
+
+.dropdown-flex {
+    display: flex;
+    height: auto;
+}
+
+
+.side-menu {
+    width: 260px;
+    min-width: 260px;
+    background: #fcfcfc;
+    border-right: 1px solid var(--border-color);
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.side-item {
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.side-item:hover {
+    padding-left: 35px;
+    color: var(--primary-red);
+    background: #fff;
+}
+
+.side-item.active {
+    padding-left: 35px;
+    background: #fff;
+    color: var(--primary-red);
+    border-left: 3px solid var(--primary-red);
+    font-weight: 600;
+}
+
+.content-display {
+    flex: 1;
+    padding: 25px;
+    display: none;
+}
+
+.mega-dropdown-box.expanded .content-display {
+    display: block;
+}
+
+.panel-box {
+    display: none;
+}
+
+.panel-box.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Category Headings (Mill Print, etc.) */
+.column h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--primary-red);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.column ul,
+.list-style {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sub-items list with smooth hover */
+.column li,
+.list-style li {
+    padding: 5px 0;
+    color: #636e72;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.column li:hover,
+.list-style li:hover {
+    padding-left: 8px;
+    /* Sub-items bhi smooth move honge */
+    color: var(--primary-red);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.widget-contact-action {
+    margin-bottom: 30px;
+}
+.contact-card {
+    background: linear-gradient(135deg, #42AEB0 0%, #2da0a0 0%);
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(45, 160, 160, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+.contact-card-bg-icon {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    opacity: 0.1;
+}
+.contact-card-bg-icon i {
+    font-size: 100px;
+    color: #ffffff;
+}
+.contact-card-content {
+    position: relative;
+    z-index: 1;
+}
+.contact-card-title {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact-card-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+.contact-card-btn {
+    background: #ffffff;
+    color: #42AEB0 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    font-weight: 700;
+    border-radius: 6px;
+    text-decoration: none;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.contact-card-btn i {
+    margin-left: 10px;
+    font-size: 16px;
+}
+.contact-card-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
