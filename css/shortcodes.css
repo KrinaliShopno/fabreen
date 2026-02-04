@@ -3675,6 +3675,22 @@ ul.contact-widget-wrapper li {
 
 
 /* hitarthi serviece css add */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .widget-nav-menu {
     background: #ffffff;
     padding: 5px;
@@ -3702,12 +3718,12 @@ ul.contact-widget-wrapper li {
     transition: all 0.3s ease;
 }
 
-.widget-nav-menu ul li a:hover,
+/* .widget-nav-menu ul li a:hover,
 .widget-nav-menu ul li.active>a {
     color: #2da0a0 !important;
     border-left: 1px solid #2da0a0 !important;
     background: #fdfdfd;
-}
+} */
 
 .has-submenu>a:after {
     content: '\f105';
@@ -3777,6 +3793,24 @@ ul.contact-widget-wrapper li {
     border-left: none !important;
     color: #000 !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* hitarthi serviece css end */
 
 
