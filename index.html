@@ -24,96 +24,95 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/megamenu.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-  rel="stylesheet"
-/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 <style>
-.procedure-row {
-  position: relative;
-  overflow: visible; 
-  padding-bottom: 60px;
-}
+    .procedure-row {
+        position: relative;
+        overflow: visible;
+        padding-bottom: 60px;
+    }
 
-.featured-imagebox {
-  text-align: center;
-}
+    .featured-imagebox {
+        text-align: center;
+    }
 
-.featured-thumbnail {
-  position: relative;
-  z-index: 5;
-}
-
-
+    .featured-thumbnail {
+        position: relative;
+        z-index: 5;
+    }
 
 
-/* ================= WAVE & CORNERS ================= */
-.procedure-row canvas {
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  opacity: 0.8;
-}
 
-/* Moving Process Icon */
-.process-icon {
-  position: absolute;
-  background: #fff;
-  border-radius: 50%;
-  padding: 8px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px !important;
-  height: 38px;
-}
 
-/* --- Professional Corner Icons --- */
-.wave-corner-icon {
-  position: absolute;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 4;
-  top: 245px; /* Wave line height matching */
-}
+    /* ================= WAVE & CORNERS ================= */
+    .procedure-row canvas {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        opacity: 0.8;
+    }
 
-/* Left side: Clean Minimal Red Dot */
-.corner-left {
-  left: 40px;
-  width: 8px;
-  height: 28px;
-  border: 3px solid #42aeb0;
-  top: 240px;
-}
+    /* Moving Process Icon */
+    .process-icon {
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        padding: 8px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px !important;
+        height: 38px;
+    }
 
-/* Right side: Professional Cotton/Thread Spool Icon */
-.corner-right {
-  right: 15px;
-  width: 45px;
-  height: 45px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-  border: 1px solid #eee;
-   top: 225px;
-}
+    /* --- Professional Corner Icons --- */
+    .wave-corner-icon {
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 4;
+        top: 245px;
+        /* Wave line height matching */
+    }
 
-.corner-right i {
-  color: #42aeb0;
-  font-size: 24px;
-}
+    /* Left side: Clean Minimal Red Dot */
+    .corner-left {
+        left: 40px;
+        width: 8px;
+        height: 28px;
+        border: 3px solid #42aeb0;
+        top: 240px;
+    }
 
-@media (max-width: 768px) {
-  .procedure-row canvas,
-  .process-icon,
-  .wave-corner-icon {
-    display: none !important;
-  }
-}
+    /* Right side: Professional Cotton/Thread Spool Icon */
+    .corner-right {
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+        border: 1px solid #eee;
+        top: 225px;
+    }
+
+    .corner-right i {
+        color: #42aeb0;
+        font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+
+        .procedure-row canvas,
+        .process-icon,
+        .wave-corner-icon {
+            display: none !important;
+        }
+    }
 </style>
 
 
@@ -225,6 +224,107 @@
                                                 <li class="mega-menu-item ">
                                                     <a href="about-us.html" class="mega-menu-link">About Us</a>
 
+                                                </li>
+
+                                                <li class="nav-item services-mega-wrapper">
+                                                    <a href="javascript:void(0)" class="nav-link-main" id="servicesBtn">
+                                                        SERVICES <span class="arrow-icon"></span>
+                                                    </a>
+
+                                                    <div class="mega-dropdown-box" id="servicesMenu">
+                                                        <div class="dropdown-flex">
+                                                            <ul class="side-menu">
+                                                                <li class="side-item"
+                                                                    onclick="window.location.href='weaving.html'">
+                                                                    Weaving</li>
+                                                                <li class="side-item"
+                                                                    onclick="window.location.href='designing.html'">
+                                                                    Dyeing
+                                                                </li>
+                                                                <li class="side-item has-child"
+                                                                    data-panel="printing-panel">Printing <span>›</span>
+                                                                </li>
+                                                                <li class="side-item has-child"
+                                                                    data-panel="value-panel">Value Adding <span>›</span>
+                                                                </li>
+                                                                <li class="side-item has-child"
+                                                                    data-panel="croset-panel">Croset Fabrics
+                                                                    <span>›</span>
+                                                                </li>
+                                                            </ul>
+
+                                                            <div class="content-display" id="contentDisplay">
+                                                                <div class="panel-box" id="printing-panel">
+                                                                    <div class="grid-layout">
+                                                                        <div class="column">
+                                                                            <h3>Printing</h3>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <a href="mill-print.html">Mill
+                                                                                        Print</a>
+                                                                                </li>
+
+                                                                                <li><a href="digital-print.html">Digital
+                                                                                        Print</a></li>
+                                                                                <li><a href="viscose-digital.html">Viscose
+                                                                                        Digital</a></li>
+                                                                                <li><a href="foil-print.html">Foil
+                                                                                        Print</a></li>
+                                                                                <li><a href="rubber-print.html">Rubber
+                                                                                        Print</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="column">
+                                                                            <h3>Embroidery</h3>
+                                                                            <ul>
+                                                                                <li><a href="multi-embroidery.html">Multi
+                                                                                        Embroidery</a></li>
+                                                                                <li><a href="chain-stitch.html">Chain
+                                                                                        Stitch</a></li>
+                                                                                <li><a href="ribbon-work.html">Ribbon
+                                                                                        Work</a></li>
+                                                                                <li><a href="cording-work.html">Cording
+                                                                                        Work</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="panel-box" id="value-panel">
+                                                                    <div class="column">
+                                                                        <h3>Value Addition</h3>
+                                                                        <ul class="list-style">
+                                                                            <li><a href="crushing.html">Crushing</a>
+                                                                            </li>
+                                                                            <li><a href="pleating.html">Pleating</a>
+                                                                            </li>
+                                                                            <li><a href="fusing.html">Fusing</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="panel-box" id="croset-panel">
+                                                                    <div class="column">
+                                                                        <h3>Croset Fabrics</h3>
+                                                                        <ul class="list-style">
+                                                                            <li><a href="crochet.html">Crochet</a></li>
+                                                                            <li>
+                                                                                <a href="russel.html">Russel</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="mega-menu-item ">
+                                                    <a href="gallery.html" class="mega-menu-link">Gallery</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a href="exhibition.html">Exhibition</a>
                                                 </li>
                                                 <!-- <li class="mega-menu-item">
                                                     <a href="#" class="mega-menu-link">Services</a>
@@ -791,89 +891,111 @@
 
 
             <!--procedure-section-->
-           <section class="ttm-row procedure-section ttm-bgcolor-grey clearfix">
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="section-title title-style-center_text">
-                <div class="title-header">
-                    <h3>OUR SERVICES</h3>
-                    <h2 class="title">Take Look Into Our <b>Best Services</b></h2>
+            <section class="ttm-row procedure-section ttm-bgcolor-grey clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title title-style-center_text">
+                                <div class="title-header">
+                                    <h3>OUR SERVICES</h3>
+                                    <h2 class="title">Take Look Into Our <b>Best Services</b></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row procedure-row position-relative mb_15">
+
+                        <div class="wave-corner-icon corner-left"></div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="featured-imagebox featured-imagebox-procedure">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid auto_size" width="198" height="198"
+                                        src="images/New Project (44).png" alt="image">
+                                    <div class="process-num"></div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Weaving</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>At Fabreen, manufacturing is a passion. This passion has driven us to set up
+                                            world-class manufacturing facilities with extreme operational efficiencies.
+                                            Over the years, we have earned an enviable reputation for the flawless
+                                            development of new extraordinary fabrics.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="featured-imagebox featured-imagebox-procedure">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid auto_size" width="198" height="198"
+                                        src="images/New Project (45).png" alt="image">
+                                    <div class="process-num"></div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Designing</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>Our expertise in designing products and markets from ‘Idea to fruition’ and
+                                            beyond. Our constant focus on innovation has helped us to emerge as a
+                                            trendsetter in various markets and be known in textile for our unbeatable
+                                            range of products.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="featured-imagebox featured-imagebox-procedure">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid auto_size" width="198" height="198"
+                                        src="images/process-03-198x198.jpg" alt="image">
+                                    <div class="process-num"></div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Printing</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>We have world-class technology and machinery for the best printing solution.
+                                            Our team is also experts in any technical part and difficulties to handle at
+                                            the time of printing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="featured-imagebox featured-imagebox-procedure">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid auto_size" width="198" height="198"
+                                        src="images/New Project (47).png" alt="image">
+                                    <div class="process-num"></div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Manufacture</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>We also offer online support for remote clients Why 24×7 assistance increases
+                                            client trust Benefits of offering multi-channel customer service</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wave-corner-icon corner-right">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row procedure-row position-relative mb_15">
-      
-      <div class="wave-corner-icon corner-left"></div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="featured-imagebox featured-imagebox-procedure">
-          <div class="featured-thumbnail">
-            <img class="img-fluid auto_size" width="198" height="198" src="images/New Project (44).png" alt="image">
-            <div class="process-num"></div>
-          </div>
-          <div class="featured-content">
-            <div class="featured-title"><h3>Weaving</h3></div>
-            <div class="featured-desc">
-              <p>At Fabreen, manufacturing is a passion. This passion has driven us to set up world-class manufacturing facilities with extreme operational efficiencies. Over the years, we have earned an enviable reputation for the flawless development of new extraordinary fabrics.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="featured-imagebox featured-imagebox-procedure">
-          <div class="featured-thumbnail">
-            <img class="img-fluid auto_size" width="198" height="198" src="images/New Project (45).png" alt="image">
-            <div class="process-num"></div>
-          </div>
-          <div class="featured-content">
-            <div class="featured-title"><h3>Designing</h3></div>
-            <div class="featured-desc">
-              <p>Our expertise in designing products and markets from ‘Idea to fruition’ and beyond. Our constant focus on innovation has helped us to emerge as a trendsetter in various markets and be known in textile for our unbeatable range of products.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="featured-imagebox featured-imagebox-procedure">
-          <div class="featured-thumbnail">
-            <img class="img-fluid auto_size" width="198" height="198" src="images/process-03-198x198.jpg" alt="image">
-            <div class="process-num"></div>
-          </div>
-          <div class="featured-content">
-            <div class="featured-title"><h3>Printing</h3></div>
-            <div class="featured-desc">
-              <p>We have world-class technology and machinery for the best printing solution. Our team is also experts in any technical part and difficulties to handle at the time of printing.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="featured-imagebox featured-imagebox-procedure">
-          <div class="featured-thumbnail">
-            <img class="img-fluid auto_size" width="198" height="198" src="images/New Project (47).png" alt="image">
-<div class="process-num"></div>          </div>
-          <div class="featured-content">
-            <div class="featured-title"><h3>Manufacture</h3></div>
-            <div class="featured-desc">
-              <p>We also offer online support for remote clients Why 24×7 assistance increases client trust Benefits of offering multi-channel customer service</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="wave-corner-icon corner-right">
-        <i class="bi bi-patch-check-fill"></i> 
-      </div>
-
-    </div>
-  </div>
-</section>
+            </section>
 
 
             <!--procedure-section end-->
@@ -1681,96 +1803,127 @@
         });
     </script> -->
     <script>
-window.addEventListener("load", function () {
-  if (window.innerWidth <= 768) return;
+        window.addEventListener("load", function () {
+            if (window.innerWidth <= 768) return;
 
-  const row = document.querySelector(".procedure-row");
-  const thumbnails = row.querySelectorAll(".featured-thumbnail");
+            const row = document.querySelector(".procedure-row");
+            const thumbnails = row.querySelectorAll(".featured-thumbnail");
 
-  const canvas = document.createElement("canvas");
-  const ctx = canvas.getContext("2d");
-  canvas.width = row.offsetWidth;
-  canvas.height = 80;
-  canvas.style.top = "215px"; 
-  canvas.style.pointerEvents = "none";
-  row.appendChild(canvas);
+            const canvas = document.createElement("canvas");
+            const ctx = canvas.getContext("2d");
+            canvas.width = row.offsetWidth;
+            canvas.height = 80;
+            canvas.style.top = "215px";
+            canvas.style.pointerEvents = "none";
+            row.appendChild(canvas);
 
-  const icon = document.createElement("div");
-  icon.className = "process-icon";
-  icon.innerHTML = '<i class="bi bi-scissors" style="color:#42aeb0; font-size:18px;"></i>';
-  row.appendChild(icon);
+            const icon = document.createElement("div");
+            icon.className = "process-icon";
+            icon.innerHTML = '<i class="bi bi-scissors" style="color:#42aeb0; font-size:18px;"></i>';
+            row.appendChild(icon);
 
-  const iconClasses = ["bi-scissors", "bi-palette", "bi-printer", "bi-gear-fill"];
-  let stops = [];
-  let progress = 0;
-  let index = 0;
-  let pause = false;
+            const iconClasses = ["bi-scissors", "bi-palette", "bi-printer", "bi-gear-fill"];
+            let stops = [];
+            let progress = 0;
+            let index = 0;
+            let pause = false;
 
-  const padding = 70; // Adjusted for new icons
-  const amplitude = 12;
+            const padding = 70; // Adjusted for new icons
+            const amplitude = 12;
 
-  function setup() {
-    canvas.width = row.offsetWidth;
-    stops = [];
-    thumbnails.forEach(img => {
-      const r = img.getBoundingClientRect();
-      const rowR = row.getBoundingClientRect();
-      stops.push((r.left - rowR.left + r.width / 2) / canvas.width);
-    });
-  }
+            function setup() {
+                canvas.width = row.offsetWidth;
+                stops = [];
+                thumbnails.forEach(img => {
+                    const r = img.getBoundingClientRect();
+                    const rowR = row.getBoundingClientRect();
+                    stops.push((r.left - rowR.left + r.width / 2) / canvas.width);
+                });
+            }
 
-  function waveY(x) {
-    const usableWidth = canvas.width - (padding * 2);
-    const xRelative = x - padding;
-    return (canvas.height / 2) - Math.sin((xRelative / usableWidth) * Math.PI * 4) * amplitude;
-  }
+            function waveY(x) {
+                const usableWidth = canvas.width - (padding * 2);
+                const xRelative = x - padding;
+                return (canvas.height / 2) - Math.sin((xRelative / usableWidth) * Math.PI * 4) * amplitude;
+            }
 
-  function drawWave() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.setLineDash([5, 5]);
-    ctx.strokeStyle = "#d1d1d1";
-    ctx.lineWidth = 1.5;
+            function drawWave() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.beginPath();
+                ctx.setLineDash([5, 5]);
+                ctx.strokeStyle = "#d1d1d1";
+                ctx.lineWidth = 1.5;
 
-    ctx.moveTo(padding, canvas.height / 2);
-    for (let x = padding; x <= canvas.width - padding; x++) {
-      ctx.lineTo(x, waveY(x));
-    }
-    ctx.stroke();
-  }
+                ctx.moveTo(padding, canvas.height / 2);
+                for (let x = padding; x <= canvas.width - padding; x++) {
+                    ctx.lineTo(x, waveY(x));
+                }
+                ctx.stroke();
+            }
 
-  function animate() {
-    drawWave();
-    if (!pause) {
-      let target = stops[index];
-      if (progress < target) {
-        progress += 0.0028;
-      } else {
-        progress = target;
-        pause = true;
-        setTimeout(() => {
-          pause = false;
-          index = (index + 1) % stops.length;
-          if (index === 0) progress = 0;
-          icon.querySelector('i').className = `bi ${iconClasses[index]}`;
-        }, 1200);
-      }
-    }
+            function animate() {
+                drawWave();
+                if (!pause) {
+                    let target = stops[index];
+                    if (progress < target) {
+                        progress += 0.0028;
+                    } else {
+                        progress = target;
+                        pause = true;
+                        setTimeout(() => {
+                            pause = false;
+                            index = (index + 1) % stops.length;
+                            if (index === 0) progress = 0;
+                            icon.querySelector('i').className = `bi ${iconClasses[index]}`;
+                        }, 1200);
+                    }
+                }
 
-    const x = padding + progress * (canvas.width - padding * 2);
-    const y = waveY(x);
-    
-    icon.style.left = (x - 19) + "px";
-    icon.style.top = (215 + y - 19) + "px";
+                const x = padding + progress * (canvas.width - padding * 2);
+                const y = waveY(x);
 
-    requestAnimationFrame(animate);
-  }
+                icon.style.left = (x - 19) + "px";
+                icon.style.top = (215 + y - 19) + "px";
 
-  setup();
-  animate();
-  window.addEventListener("resize", setup);
-});
-</script>
+                requestAnimationFrame(animate);
+            }
+
+            setup();
+            animate();
+            window.addEventListener("resize", setup);
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btn = document.getElementById('servicesBtn');
+            const menu = document.getElementById('servicesMenu');
+            const sideItems = document.querySelectorAll('.side-item.has-child');
+            const allPanels = document.querySelectorAll('.panel-box');
+
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                menu.classList.toggle('is-visible');
+            });
+
+            sideItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    menu.classList.add('expanded');
+                    sideItems.forEach(i => i.classList.remove('active'));
+                    allPanels.forEach(p => p.classList.remove('active'));
+                    this.classList.add('active');
+                    const target = this.getAttribute('data-panel');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+
+            document.addEventListener('click', function () {
+                menu.classList.remove('is-visible');
+                menu.classList.remove('expanded');
+            });
+        });
+    </script>
 </body>
 
 <!-- Mirrored from themetechmount.com/html/fablio/home-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 10:57:52 GMT -->

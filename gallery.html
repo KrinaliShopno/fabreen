@@ -25,10 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/megamenu.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-  rel="stylesheet"
-/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
     <style>
         /* ===== TITLE ===== */
         :root {
@@ -280,16 +277,98 @@
                                                     <a href="about-us.html" class="mega-menu-link">About Us</a>
 
                                                 </li>
-                                                <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-link">Services</a>
-                                                    <ul class="mega-submenu">
-                                                        <li><a href="weaving.html">Weaving</a></li>
-                                                        <li><a href="designing.html">Designing</a></li>
-                                                        <li><a href="fabric-printing.html">Printing</a></li>
-                                                        <li><a href="manufacture.html">Manufacture</a></li>
-                                                        <li><a href="stichfabric.html">Stich Fabric</a></li>
-                                                        <li><a href="we-design-fabric.html">We Design Fabric</a></li>
-                                                    </ul>
+                                                <li class="nav-item services-mega-wrapper">
+                                                    <a href="javascript:void(0)" class="nav-link-main" id="servicesBtn">
+                                                        SERVICES <span class="arrow-icon"></span>
+                                                    </a>
+
+                                                    <div class="mega-dropdown-box" id="servicesMenu">
+                                                        <div class="dropdown-flex">
+                                                            <ul class="side-menu">
+                                                                <li class="side-item"
+                                                                    onclick="window.location.href='weaving.html'">
+                                                                    Weaving</li>
+                                                                <li class="side-item"
+                                                                    onclick="window.location.href='designing.html'">
+                                                                    Dyeing
+                                                                </li>
+                                                                <li class="side-item has-child"
+                                                                    data-panel="printing-panel">Printing <span>›</span>
+                                                                </li>
+                                                                <li class="side-item has-child"
+                                                                    data-panel="value-panel">Value Adding <span>›</span>
+                                                                </li>
+                                                                <li class="side-item has-child"
+                                                                    data-panel="croset-panel">Croset Fabrics
+                                                                    <span>›</span>
+                                                                </li>
+                                                            </ul>
+
+                                                            <div class="content-display" id="contentDisplay">
+                                                                <div class="panel-box" id="printing-panel">
+                                                                    <div class="grid-layout">
+                                                                        <div class="column">
+                                                                            <h3>Printing</h3>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <a href="mill-print.html">Mill
+                                                                                        Print</a>
+                                                                                </li>
+
+                                                                                <li><a href="digital-print.html">Digital
+                                                                                        Print</a></li>
+                                                                                <li><a href="viscose-digital.html">Viscose
+                                                                                        Digital</a></li>
+                                                                                <li><a href="foil-print.html">Foil
+                                                                                        Print</a></li>
+                                                                                <li><a href="rubber-print.html">Rubber
+                                                                                        Print</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="column">
+                                                                            <h3>Embroidery</h3>
+                                                                            <ul>
+                                                                                <li><a href="multi-embroidery.html">Multi
+                                                                                        Embroidery</a></li>
+                                                                                <li><a href="chain-stitch.html">Chain
+                                                                                        Stitch</a></li>
+                                                                                <li><a href="ribbon-work.html">Ribbon
+                                                                                        Work</a></li>
+                                                                                <li><a href="cording-work.html">Cording
+                                                                                        Work</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="panel-box" id="value-panel">
+                                                                    <div class="column">
+                                                                        <h3>Value Addition</h3>
+                                                                        <ul class="list-style">
+                                                                            <li><a href="crushing.html">Crushing</a>
+                                                                            </li>
+                                                                            <li><a href="pleating.html">Pleating</a>
+                                                                            </li>
+                                                                            <li><a href="fusing.html">Fusing</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="panel-box" id="croset-panel">
+                                                                    <div class="column">
+                                                                        <h3>Croset Fabrics</h3>
+                                                                        <ul class="list-style">
+                                                                            <li><a href="crochet.html">Crochet</a></li>
+                                                                            <li>
+                                                                                <a href="russel.html">Russel</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </li>
                                                 <li class="mega-menu-item ">
                                                     <a href="gallery.html" class="mega-menu-link">Gallery</a>
@@ -456,38 +535,38 @@
                             <div class="gallery-item"><img src="images/portfolio/fabrin.jpg"></div>
                             <div class="gallery-item"><img src="images/portfolio/fabrin1.jpg"></div>
                             <div class="gallery-item"><img src="images/portfolio/fabrin2.jpg"></div>
-                             <div class="gallery-item"><img src="images/portfolio/fabrin3.jpg"></div>
-                              <div class="gallery-item"><img src="images/portfolio/fabrin4.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin3.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin4.jpg"></div>
                         </div>
                     </div>
 
                     <div class="tab-pane fade" id="mens">
                         <div class="gallery-grid">
                             <div class="gallery-item"><img src="images/portfolio/fabrin.jpg"></div>
-                             <div class="gallery-item"><img src="images/portfolio/fabrin4.jpg"></div>
-                              <div class="gallery-item"><img src="images/portfolio/fabrin5.jpg"></div>
-                               <div class="gallery-item"><img src="images/portfolio/fabrin6.jpg"></div>
-                                <div class="gallery-item"><img src="images/portfolio/fabrin7.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin4.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin5.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin6.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin7.jpg"></div>
                         </div>
                     </div>
 
                     <div class="tab-pane fade" id="ladies">
                         <div class="gallery-grid">
                             <div class="gallery-item"><img src="images/portfolio/fabrin1.jpg"></div>
-                             <div class="gallery-item"><img src="images/portfolio/fabrin2.jpg"></div>
-                              <div class="gallery-item"><img src="images/portfolio/fabrin3.jpg"></div>
-                               <div class="gallery-item"><img src="images/portfolio/fabrin4.jpg"></div>
-                                <div class="gallery-item"><img src="images/portfolio/fabrin5.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin2.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin3.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin4.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin5.jpg"></div>
                         </div>
                     </div>
 
                     <div class="tab-pane fade" id="boys">
                         <div class="gallery-grid">
                             <div class="gallery-item"><img src="images/portfolio/fabrin2.jpg"></div>
-                             <div class="gallery-item"><img src="images/portfolio/fabrin4.jpg"></div>
-                              <div class="gallery-item"><img src="images/portfolio/fabrin5.jpg"></div>
-                               <div class="gallery-item"><img src="images/portfolio/fabrin6.jpg"></div>
-                                <div class="gallery-item"><img src="images/portfolio/fabrin7.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin4.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin5.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin6.jpg"></div>
+                            <div class="gallery-item"><img src="images/portfolio/fabrin7.jpg"></div>
                         </div>
                     </div>
 
@@ -737,7 +816,7 @@
         });
     </script>
 
-  <script>
+    <script>
         const images = document.querySelectorAll('.gallery-item img');
         const lightbox = document.getElementById('galleryLightbox');
         const lightboxImg = document.getElementById('lightboxImg');
@@ -794,6 +873,38 @@
                 if (e.key === 'ArrowLeft') prevBtn.click();
                 if (e.key === 'Escape') closeLightbox();
             }
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btn = document.getElementById('servicesBtn');
+            const menu = document.getElementById('servicesMenu');
+            const sideItems = document.querySelectorAll('.side-item.has-child');
+            const allPanels = document.querySelectorAll('.panel-box');
+
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                menu.classList.toggle('is-visible');
+            });
+
+            sideItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    menu.classList.add('expanded');
+                    sideItems.forEach(i => i.classList.remove('active'));
+                    allPanels.forEach(p => p.classList.remove('active'));
+                    this.classList.add('active');
+                    const target = this.getAttribute('data-panel');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+
+            document.addEventListener('click', function () {
+                menu.classList.remove('is-visible');
+                menu.classList.remove('expanded');
+            });
         });
     </script>
 
