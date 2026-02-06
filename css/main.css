@@ -4113,7 +4113,8 @@ ul.footer-nav-menu li:last-child:after {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(../images/pagetitle-bg.jpg) center center / cover no-repeat;
+    /* background: url(../images/pagetitle-bg.jpg) center center / cover no-repeat; */
+        background: url(../images/banner_bg.png) center center / cover no-repeat;
     animation: bgZoomInOut 16s ease-in-out infinite;
     z-index: -2;
 }
@@ -5119,34 +5120,6 @@ section.error-404 .page-content p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* hitarthi header dropdown css add */
 
 :root {
@@ -5356,3 +5329,98 @@ section.error-404 .page-content p {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 /* hitarthi conntact us css end *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
