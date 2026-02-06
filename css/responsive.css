@@ -151,11 +151,11 @@
 
 	.sidebar .sidebar-right, .sidebar .sidebar-left{
 		flex: 30%;
-    	max-width: 30%;
+    	max-width: 100%;
     }
 	.sidebar .content-area {
-	    flex: 70%;
-	    max-width: 70%;
+	    flex: 65;
+	    /* max-width: 70%; */
 	}
 	.sidebar.ttm-sidebar-left .content-area, .sidebar .sidebar-right{ padding-left: 20px; }
 	.sidebar.ttm-sidebar-right .content-area, .sidebar .sidebar-left{ padding-right: 20px; }

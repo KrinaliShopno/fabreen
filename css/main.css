@@ -4128,8 +4128,53 @@ ul.footer-nav-menu li:last-child:after {
             rgba(0, 0, 0, 0.18) 0%,
             rgba(0, 0, 0, 0.12) 45%,
             rgba(0, 0, 0, 0.08) 100%);
-    z-index: -1;
+    z-index: 1;
 }
+
+/* ===== Page Title with IMG + Overlay ===== */
+
+.page-title-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image behaves like background */
+.page-title-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: bgZoomInOut 16s ease-in-out infinite;
+    z-index: 0;
+}
+
+/* Background overlay (exact like before) */
+.page-title-img-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #00000096;
+    z-index: 1;
+}
+
+/* Content on top */
+.page-title-img-wrapper .container {
+    position: relative;
+    z-index: 2;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+        justify-content: center;
+}
+
+/* Text visibility */
+.page-title-heading .title,
+.breadcrumb-wrapper,
+.breadcrumb-wrapper a {
+    color: #fff;
+}
+
 
 /* ❌ Remove Theme Default Dark Overlay */
 .ttm-page-title-row .ttm-bg-layer {
@@ -4189,6 +4234,7 @@ ul.footer-nav-menu li:last-child:after {
     font-size: 15px;
     line-height: 20px;
     position: relative;
+    color: #fff;
 }
 
 .breadcrumb-wrapper span:first-child {
@@ -5272,7 +5318,7 @@ section.error-404 .page-content p {
 .contact-card {
     background: linear-gradient(135deg, #42AEB0 0%, #2da0a0 0%);
     padding: 30px 20px;
-    border-radius: 12px;
+    border-radius: 4px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(45, 160, 160, 0.25);
     position: relative;
