@@ -927,7 +927,50 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     </script>
 
+  <script>
+        jQuery(function ($) {
 
+            /* PrettyPhoto auto bind for images */
+            $('a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]').each(function () {
+                if (
+                    $(this).attr('target') != '_blank' &&
+                    !$(this).hasClass('prettyphoto') &&
+                    !$(this).hasClass('modula-lightbox')
+                ) {
+                    var attr = $(this).attr('data-gal');
+                    if (typeof attr !== typeof undefined && attr !== false && attr != 'prettyPhoto') {
+                        $(this).attr('data-rel', 'prettyPhoto');
+                    }
+                }
+            });
+
+            $('a[data-gal^="prettyPhoto"]').prettyPhoto({ hook: 'data-gal' });
+            $('a.ttm_prettyphoto').prettyPhoto();
+
+            /* Value Addition Floating Bar */
+            var e =
+                '<div class="prt_floting_customsett">' +
+
+                '<a href="https://maps.app.goo.gl/SCw3EUtUFJZhTCnu5" target="_blank" class="tmtheme_fbar_icons">' +
+                '<i class="fa fa-map-marker"></i><span>Location</span>' +
+                '</a>' +
+
+                '<a href="mailto:fabreenlifestyle@gmail.com" class="tmtheme_fbar_icons">' +
+                '<i class="fa fa-envelope"></i><span>Email</span>' +
+                '</a>' +
+
+                '<a href="https://wa.me/919825304172" target="_blank" class="tmtheme_fbar_icons">' +
+                '<i class="fa fa-whatsapp"></i><span>WhatsApp</span>' +
+                '</a>' +
+
+                '<div class="clearfix"></div>' +
+                '</div>';
+
+            $('body').append(e);
+
+
+        });
+    </script>
 </body>
 
 <!-- Mirrored from themetechmount.com/html/fablio/fabric-dyeing.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 10:57:59 GMT -->

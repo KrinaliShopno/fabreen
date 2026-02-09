@@ -622,7 +622,130 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
     <script src="js/jquery-isotope.js"></script>
     <script src="js/main.js"></script>
     <!-- Javascript end-->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('servicesBtn');
+    const menu = document.getElementById('servicesMenu');
+    const wrapper = document.querySelector('.services-mega-wrapper');
+    const sideItems = document.querySelectorAll('.side-item.has-child');
+    const allPanels = document.querySelectorAll('.panel-box');
 
+    let isClickedOpen = false; // 👈 click state
+
+    /* =========================
+       CLICK (DESKTOP + MOBILE)
+    ========================== */
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        isClickedOpen = !isClickedOpen;
+
+        if (isClickedOpen) {
+            menu.classList.add('is-visible');
+        } else {
+            closeMenu();
+        }
+    });
+
+    /* =========================
+       HOVER (DESKTOP)
+    ========================== */
+    wrapper.addEventListener('mouseenter', function () {
+        menu.classList.add('is-visible');
+    });
+
+    wrapper.addEventListener('mouseleave', function () {
+        if (!isClickedOpen) {
+            closeMenu();
+        }
+    });
+
+    /* =========================
+       SIDE PANEL CLICK
+    ========================== */
+    sideItems.forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.stopPropagation();
+
+            isClickedOpen = true;
+            menu.classList.add('is-visible', 'expanded');
+
+            sideItems.forEach(i => i.classList.remove('active'));
+            allPanels.forEach(p => p.classList.remove('active'));
+
+            this.classList.add('active');
+            const target = this.getAttribute('data-panel');
+            document.getElementById(target).classList.add('active');
+        });
+    });
+
+    /* =========================
+       CLICK OUTSIDE CLOSE
+    ========================== */
+    document.addEventListener('click', function () {
+        closeMenu();
+    });
+
+    menu.addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+
+    /* =========================
+       CLOSE FUNCTION
+    ========================== */
+    function closeMenu() {
+        isClickedOpen = false;
+        menu.classList.remove('is-visible', 'expanded');
+        sideItems.forEach(i => i.classList.remove('active'));
+        allPanels.forEach(p => p.classList.remove('active'));
+    }
+});
+</script>
+  <script>
+        jQuery(function ($) {
+
+            /* PrettyPhoto auto bind for images */
+            $('a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]').each(function () {
+                if (
+                    $(this).attr('target') != '_blank' &&
+                    !$(this).hasClass('prettyphoto') &&
+                    !$(this).hasClass('modula-lightbox')
+                ) {
+                    var attr = $(this).attr('data-gal');
+                    if (typeof attr !== typeof undefined && attr !== false && attr != 'prettyPhoto') {
+                        $(this).attr('data-rel', 'prettyPhoto');
+                    }
+                }
+            });
+
+            $('a[data-gal^="prettyPhoto"]').prettyPhoto({ hook: 'data-gal' });
+            $('a.ttm_prettyphoto').prettyPhoto();
+
+            /* Value Addition Floating Bar */
+            var e =
+                '<div class="prt_floting_customsett">' +
+
+                '<a href="https://maps.app.goo.gl/SCw3EUtUFJZhTCnu5" target="_blank" class="tmtheme_fbar_icons">' +
+                '<i class="fa fa-map-marker"></i><span>Location</span>' +
+                '</a>' +
+
+                '<a href="mailto:fabreenlifestyle@gmail.com" class="tmtheme_fbar_icons">' +
+                '<i class="fa fa-envelope"></i><span>Email</span>' +
+                '</a>' +
+
+                '<a href="https://wa.me/919825304172" target="_blank" class="tmtheme_fbar_icons">' +
+                '<i class="fa fa-whatsapp"></i><span>WhatsApp</span>' +
+                '</a>' +
+
+                '<div class="clearfix"></div>' +
+                '</div>';
+
+            $('body').append(e);
+
+
+        });
+    </script>
 </body>
 
 <!-- Mirrored from themetechmount.com/html/fablio/fabric-printing.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 10:57:58 GMT -->
