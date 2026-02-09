@@ -227,7 +227,7 @@
                                                 </li>
 
                                                 <li class="nav-item services-mega-wrapper">
-                                                    <a href="javascript:void(0)" class="nav-link-main" id="servicesBtn">
+                                                    <a href="#" class="nav-link-main" id="servicesBtn">
                                                         SERVICES <span class="arrow-icon"></span>
                                                     </a>
 
@@ -1525,7 +1525,7 @@
                                     <div class="footer-logo">
                                         <a href="/">
                                             <img id="footer-logo-img" class="img-fluid auto_size" height="46"
-                                                width="170" src="images/image (21).png" alt="image">
+                                                width="170" src="images/FABREEN NEW LOGO (1).png" alt="image">
                                         </a>
                                     </div>
                                     <div class="textwidget widget-text">
@@ -1703,6 +1703,7 @@
             formSection.style.display = formSection.style.display === 'block' ? 'none' : 'block';
         });
     </script>
+
 
     <script>
         const images = document.querySelectorAll('.gallery-item img');
@@ -1893,37 +1894,89 @@
             window.addEventListener("resize", setup);
         });
     </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('servicesBtn');
+    const menu = document.getElementById('servicesMenu');
+    const wrapper = document.querySelector('.services-mega-wrapper');
+    const sideItems = document.querySelectorAll('.side-item.has-child');
+    const allPanels = document.querySelectorAll('.panel-box');
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const btn = document.getElementById('servicesBtn');
-            const menu = document.getElementById('servicesMenu');
-            const sideItems = document.querySelectorAll('.side-item.has-child');
-            const allPanels = document.querySelectorAll('.panel-box');
+    let isClickedOpen = false; // 👈 click state
 
-            btn.addEventListener('click', function (e) {
-                e.stopPropagation();
-                menu.classList.toggle('is-visible');
-            });
+    /* =========================
+       CLICK (DESKTOP + MOBILE)
+    ========================== */
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
 
-            sideItems.forEach(item => {
-                item.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    menu.classList.add('expanded');
-                    sideItems.forEach(i => i.classList.remove('active'));
-                    allPanels.forEach(p => p.classList.remove('active'));
-                    this.classList.add('active');
-                    const target = this.getAttribute('data-panel');
-                    document.getElementById(target).classList.add('active');
-                });
-            });
+        isClickedOpen = !isClickedOpen;
 
-            document.addEventListener('click', function () {
-                menu.classList.remove('is-visible');
-                menu.classList.remove('expanded');
-            });
+        if (isClickedOpen) {
+            menu.classList.add('is-visible');
+        } else {
+            closeMenu();
+        }
+    });
+
+    /* =========================
+       HOVER (DESKTOP)
+    ========================== */
+    wrapper.addEventListener('mouseenter', function () {
+        menu.classList.add('is-visible');
+    });
+
+    wrapper.addEventListener('mouseleave', function () {
+        if (!isClickedOpen) {
+            closeMenu();
+        }
+    });
+
+    /* =========================
+       SIDE PANEL CLICK
+    ========================== */
+    sideItems.forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.stopPropagation();
+
+            isClickedOpen = true;
+            menu.classList.add('is-visible', 'expanded');
+
+            sideItems.forEach(i => i.classList.remove('active'));
+            allPanels.forEach(p => p.classList.remove('active'));
+
+            this.classList.add('active');
+            const target = this.getAttribute('data-panel');
+            document.getElementById(target).classList.add('active');
         });
-    </script>
+    });
+
+    /* =========================
+       CLICK OUTSIDE CLOSE
+    ========================== */
+    document.addEventListener('click', function () {
+        closeMenu();
+    });
+
+    menu.addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+
+    /* =========================
+       CLOSE FUNCTION
+    ========================== */
+    function closeMenu() {
+        isClickedOpen = false;
+        menu.classList.remove('is-visible', 'expanded');
+        sideItems.forEach(i => i.classList.remove('active'));
+        allPanels.forEach(p => p.classList.remove('active'));
+    }
+});
+</script>
+
+
+
 </body>
 
 <!-- Mirrored from themetechmount.com/html/fablio/home-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 10:57:52 GMT -->
