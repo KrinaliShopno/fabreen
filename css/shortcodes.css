@@ -1600,7 +1600,8 @@ display: none;
     height: calc(100% - 20px);
     z-index: 0;
     margin-top: 20px;
-    background-color: #42AEB0;;
+    background-color: #42AEB0;
+    ;
 }
 
 /* style7 */
@@ -3717,12 +3718,12 @@ ul.contact-widget-wrapper li {
     padding: 0;
 }
 
-.widget-nav-menu ul > li {
+.widget-nav-menu ul>li {
     margin-bottom: 10px;
 }
 
 /* Main links */
-.widget-nav-menu ul > li > a {
+.widget-nav-menu ul>li>a {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3738,20 +3739,20 @@ ul.contact-widget-wrapper li {
 }
 
 /* Hover */
-.widget-nav-menu ul > li > a:hover {
+.widget-nav-menu ul>li>a:hover {
     background: #eef7f7;
     color: #2da0a0;
 }
 
 /* Active */
-.widget-nav-menu ul > li.active > a {
+.widget-nav-menu ul>li.active>a {
     background: linear-gradient(90deg, #2da0a0, #42b6b6);
     color: #ffffff !important;
     box-shadow: 0 6px 18px rgba(45, 160, 160, 0.25);
 }
 
 /* Arrow icon */
-.has-submenu > a::after {
+.has-submenu>a::after {
     content: "\f107";
     font-family: "FontAwesome";
     font-size: 16px;
@@ -3759,7 +3760,7 @@ ul.contact-widget-wrapper li {
     transition: transform 0.3s ease;
 }
 
-.has-submenu.open > a::after {
+.has-submenu.open>a::after {
     transform: rotate(180deg);
 }
 
@@ -3825,11 +3826,12 @@ ul.contact-widget-wrapper li {
         padding: 14px;
     }
 
-    .widget-nav-menu ul > li > a {
+    .widget-nav-menu ul>li>a {
         font-size: 14px;
         padding: 10px 14px;
     }
 }
+
 .fabreen-services {
     position: sticky;
     top: 120px;
@@ -3855,12 +3857,12 @@ ul.contact-widget-wrapper li {
     margin: 0;
 }
 
-.service-menu > li {
+.service-menu>li {
     margin-bottom: 12px;
 }
 
 /* Main links */
-.service-menu > li > a {
+.service-menu>li>a {
     display: block;
     padding: 10px 14px;
     border-radius: 4px;
@@ -3873,18 +3875,20 @@ ul.contact-widget-wrapper li {
 }
 
 /* Hover */
-.service-menu > li > a:hover {
+.service-menu>li>a:hover {
     background: #42aeb0;
     color: #ffffff;
     border: 1px solid #42aeb0;
 }
-.widget-area{
+
+.widget-area {
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
+
 /* Active main */
-.service-menu > li.active > a {
+.service-menu>li.active>a {
     background: #2da0a0;
     color: #ffffff;
     font-weight: 600;
@@ -3923,20 +3927,20 @@ ul.contact-widget-wrapper li {
 
 /* Sub hover */
 .group ul li a:hover {
-       background: #42aeb0;
+    background: #42aeb0;
     color: #ffffff;
 }
 
 /* Sub active */
 .group ul li a.active {
-    background: rgba(45,160,160,0.12);
+    background: rgba(45, 160, 160, 0.12);
     color: #2da0a0;
     font-weight: 600;
 }
 
 /* Main category active */
-.fabreen-menu > li.active > a,
-.fabreen-menu > li.group.active > .group-title {
+.fabreen-menu>li.active>a,
+.fabreen-menu>li.group.active>.group-title {
     background: #42aeb0;
     color: #ffffff;
     border-radius: 10px;
@@ -3944,19 +3948,21 @@ ul.contact-widget-wrapper li {
 }
 
 /* Active group title bar */
-.fabreen-menu > li.group.active > .group-title::before {
+.fabreen-menu>li.group.active>.group-title::before {
     background: #ffffff;
 }
 
 /* Sub active stays soft */
 .fabreen-menu .group ul li a.active {
-    background: rgba(66,174,176,0.18);
+    background: rgba(66, 174, 176, 0.18);
     color: #42aeb0;
     font-weight: 600;
 }
+
 /* Scroll container */
 .services-scroll {
-    max-height: 520px;          /* height as per need */
+    max-height: 520px;
+    /* height as per need */
     overflow-y: auto;
     padding-right: 6px;
 }
@@ -4061,7 +4067,8 @@ ul.contact-widget-wrapper li {
 
     .sidebar-left {
         position: sticky;
-        top: 120px; /* header height ke hisaab se */
+        top: 120px;
+        /* header height ke hisaab se */
         /* max-height: 1150px;  */
         /* overflow-y: auto; */
         padding-right: 8px;
@@ -4105,11 +4112,13 @@ ul.contact-widget-wrapper li {
 .pagination-block .page-numbers i {
     font-size: 12px;
 }
+
 .services-img {
-        border: 4px solid #42aeb0;
+    border: 4px solid #42aeb0;
     border-radius: 4px;
     /* height: 400px; */
 }
+
 /*** Color Switcher Style
 ==================================================================== ***/
 .prt_floting_customsett {
