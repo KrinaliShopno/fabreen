@@ -164,7 +164,22 @@
 
 }
 
+@media (max-width:768px) {
 
+.newsletter_widget .newsletter-form button[type="submit"] {
+    width: 355px;
+    float: left;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    display: block;
+    bottom: 0;
+    border: 0;
+    right: 6px;
+    left: auto;
+}
+}
 @media (max-width: 991px){
 
 	.row-equal-height > [class*='col-'],
