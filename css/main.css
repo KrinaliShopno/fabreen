@@ -314,7 +314,7 @@ body .page {
 body .site-main {
     background-color: #fff;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 body .page.sidebar-true .site-main {
@@ -2006,7 +2006,11 @@ nav.main-menu,
     /* height: 550px; */
     border-radius: 10px;
 }
-
+@media (max-width:768px) {
+   .home-link img {
+    width:150px;
+} 
+}
 
 /** 2.Darkgrey-color **/
 .ttm-textcolor-darkgrey,
@@ -5089,8 +5093,6 @@ section.error-404 .page-content p {
 }
 
 
-
-
 .bullet-list li {
     display: flex;
     align-items: flex-start;
@@ -5109,64 +5111,6 @@ section.error-404 .page-content p {
     left: 0;
     top: 9px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* hitarthi header dropdown css add */
 
