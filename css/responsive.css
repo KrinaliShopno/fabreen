@@ -147,9 +147,7 @@
 	
 }
 @media (max-width:768px) {
-.ttm-row .container > .row, .ttm-page-title-row .container > .row, footer .container .row { margin: 0; padding-bottom: 20px;}
-
-}
+.ttm-row .container > .row, .ttm-page-title-row .container > .row, footer .container .row { margin: 0; padding-bottom: 20px;}}
 @media (min-width: 992px){
 .ttm-row .container > .row, .ttm-page-title-row .container > .row, footer .container .row { margin: 0; }
 	.sidebar .sidebar-right, .sidebar .sidebar-left{
