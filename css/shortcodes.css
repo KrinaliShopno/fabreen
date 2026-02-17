@@ -1449,7 +1449,7 @@ i.fa-play {
 
 .featured-icon-box.style5 i.ttm-num {
     position: absolute;
-    top: 110%;
+    top: 104%;
     height: 38px;
     width: 38px;
     border-radius: 50%;
@@ -1539,12 +1539,14 @@ i.fa-play {
     left: 70px;
     transition: all .5s ease;
 }
+
 @media (max-width:768px) {
-.featured-icon-box.style6 .featured-content:before {
-display: none;
-}
+    .featured-icon-box.style6 .featured-content:before {
+        display: none;
+    }
 
 }
+
 .featured-icon-box.style6 .featured-content .featured-title h3 {
     font-size: 20px;
     margin-bottom: 8px;
@@ -1558,16 +1560,18 @@ display: none;
     margin-top: -15px;
     transition: all .4s;
 }
+
 @media (max-width:768px) {
-.featured-icon-box.style6 .ttm-icon {
-    line-height: 48px;
-    width: 48px;
-    height: 48px;
-    margin-right: 0px;
-    margin-top: -15px;
-    transition: all .4s;
+    .featured-icon-box.style6 .ttm-icon {
+        line-height: 48px;
+        width: 48px;
+        height: 48px;
+        margin-right: 0px;
+        margin-top: -15px;
+        transition: all .4s;
+    }
 }
-}
+
 .featured-icon-box.style6 .ttm-icon i {
     font-size: 18px;
     font-weight: 500;
@@ -3962,9 +3966,8 @@ ul.contact-widget-wrapper li {
 /* Scroll container */
 .services-scroll {
     max-height: 520px;
-    /* height as per need */
-    overflow-y: auto;
-    padding-right: 6px;
+    /* overflow-y: auto; */
+    /* padding-right: 6px; */
 }
 
 /* Image spacing */
@@ -4499,7 +4502,7 @@ ul.contact-widget-wrapper li {
 
 /* DARK SECTION */
 .about-dark {
-     background: #42aeb0;
+    background: #42aeb0;
     color: #fff;
 }
 
@@ -4777,7 +4780,7 @@ ul.contact-widget-wrapper li {
 
 /* TOP LABEL */
 .manifesto-label {
-display: inline-block;
+    display: inline-block;
     background: rgb(255 255 255);
     color: #42aeb0;
     padding: 7px 18px;
@@ -4844,6 +4847,12 @@ display: inline-block;
     margin: auto;
 }
 
+.ttm-left-span>.ttm-col-wrapper-bg-layer {
+    margin-left: -500px;
+    width: auto;
+    right: 0;
+}
+
 /* RESPONSIVE */
 @media(max-width: 768px) {
     .fabreen-manifesto-inner h2 {
@@ -4889,13 +4898,14 @@ display: inline-block;
     .fabreen-manifesto h2 {
         font-size: 32px;
     }
+
     .about-image img {
-    width: 100%;
-    border-radius: 14px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-    height: 100%;
-    background-size: cover;
-}
+        width: 100%;
+        border-radius: 14px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        height: 100%;
+        background-size: cover;
+    }
 }
 
 /* QUOTE */
@@ -4907,4 +4917,3 @@ display: inline-block;
         grid-template-columns: 1fr;
     }
 }
-

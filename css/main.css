@@ -551,7 +551,8 @@ label {
 }
 
 .ttm_single_image-wrapper.imagestyle-two .ttm_single_image_text:before {
-    background-color: #42AEB0;;
+    background-color: #42AEB0;
+    ;
     -webkit-mask: url(../images/image-arrow.svg) no-repeat 100% 100%;
     -webkit-mask-box-image: url(../images/image-arrow.svg);
     content: '';
@@ -2006,10 +2007,11 @@ nav.main-menu,
     /* height: 550px; */
     border-radius: 10px;
 }
+
 @media (max-width:768px) {
-   .home-link img {
-    width:150px;
-} 
+    .home-link img {
+        width: 150px;
+    }
 }
 
 /** 2.Darkgrey-color **/
@@ -4118,7 +4120,7 @@ ul.footer-nav-menu li:last-child:after {
     position: absolute;
     inset: 0;
     /* background: url(../images/pagetitle-bg.jpg) center center / cover no-repeat; */
-        background: url(../images/banner_bg.png) center center / cover no-repeat;
+    background: url(../images/banner_bg.png) center center / cover no-repeat;
     animation: bgZoomInOut 16s ease-in-out infinite;
     z-index: -2;
 }
@@ -4169,7 +4171,7 @@ ul.footer-nav-menu li:last-child:after {
     min-height: 320px;
     display: flex;
     align-items: center;
-        justify-content: center;
+    justify-content: center;
 }
 
 /* Text visibility */
@@ -4702,7 +4704,7 @@ article.ttm-blog-single .ttm-blog-single-content {
 }
 
 .footer .footer-logo img {
-       background: #ffffff;
+    background: #ffffff;
     border-radius: 4px;
     padding: 5px;
 }
@@ -4766,46 +4768,43 @@ section.error-404 .page-content p {
     padding-bottom: 15px;
 }
 
-/* Horizontal Box Layout using Flexbox */
 .featured-reviews-grid {
     display: flex;
     justify-content: space-between;
-    /* Space out the boxes */
     gap: 30px;
-    /* Gap between the boxes */
     flex-wrap: wrap;
-    /* Ensures responsiveness if the screen is small */
     margin-bottom: 30px;
 }
 
-.feature-box {
-    /* Each box takes up one-third of the space */
-    flex: 1 1 30%;
-    /* 1 1 30%: flex-grow, flex-shrink, basis */
-    min-width: 300px;
-    /* Minimum size for small screens */
+.hitarthi {
+    border: 1px solid #00000029;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    background: #fff;
+    padding: 8px;
+    height: 100%;
+}
 
-    /* Box Design */
+.feature-box {
+    flex: 1 1 30%;
+    min-width: 300px;
     background-color: #ffffff;
     border: 1px solid #dee2e6;
     border-radius: 10px;
     overflow: hidden;
-    /* Ensures image corners are clipped */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .feature-box:hover {
     transform: translateY(-5px);
-    /* Lift effect on hover */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .product-image {
     width: 100%;
-
     object-fit: cover;
-    /* Ensures image covers the area without distortion */
     display: block;
 }
 
@@ -4893,7 +4892,8 @@ section.error-404 .page-content p {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
     gap: 20px;
 }
 
@@ -5007,14 +5007,16 @@ section.error-404 .page-content p {
     align-items: flex-start;
     position: relative;
 }
+
 @media (max-width:1024px) {
     .procedure-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        position: relative;
+    }
 }
-}
+
 .flow-svg {
     width: 100%;
     height: 200px;
@@ -5261,12 +5263,14 @@ section.error-404 .page-content p {
         transform: translateY(0);
     }
 }
+
 /* hitarthi header dropdown css end */
 
 /* hitarthi conntact us css add */
 .widget-contact-action {
     margin-bottom: 30px;
 }
+
 .contact-card {
     background: linear-gradient(135deg, #42AEB0 0%, #2da0a0 0%);
     padding: 30px 20px;
@@ -5276,32 +5280,38 @@ section.error-404 .page-content p {
     position: relative;
     overflow: hidden;
 }
+
 .contact-card-bg-icon {
     position: absolute;
     top: -20px;
     right: -20px;
     opacity: 0.1;
 }
+
 .contact-card-bg-icon i {
     font-size: 100px;
     color: #ffffff;
 }
+
 .contact-card-content {
     position: relative;
     z-index: 1;
 }
+
 .contact-card-title {
     color: #ffffff;
     font-size: 21px;
     font-weight: 700;
     margin-bottom: 10px;
 }
+
 .contact-card-text {
     color: rgba(255, 255, 255, 0.85);
     font-size: 16px;
     margin-bottom: 25px;
     line-height: 1.6;
 }
+
 .contact-card-btn {
     background: #ffffff;
     color: #42AEB0 !important;
@@ -5318,107 +5328,15 @@ section.error-404 .page-content p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
+
 .contact-card-btn i {
     margin-left: 10px;
     font-size: 16px;
 }
+
 .contact-card-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
-/* hitarthi conntact us css end *
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* hitarthi conntact us css end 
