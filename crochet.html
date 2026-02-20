@@ -26,10 +26,58 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/megamenu.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+<style>
+    @media (max-width: 991px) {
+        .pin-spacer {
+            padding: 0 !important;
+            height: auto !important;
+            display: block !important;
+        }
 
+        .ttm-featured-wrapper.services-scroll {
+            height: auto !important;
+            margin-bottom: 20px !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .services-img {
+            height: 265px !important;
+            margin-bottom: 11px !important;
+            display: block !important;
+            position: relative !important;
+            object-fit: cover !important;
+        }
+
+        .ttm-service-description {
+            padding-top: 10px !important;
+            margin-top: 5px !important;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .ttm-featured-wrapper.services-scroll {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            width: 100% !important;
+        }
+
+        .services-img {
+            width: 365px !important;
+            height: 265px !important;
+            margin-bottom: 0px !important;
+            object-fit: cover !important;
+        }
+    }
+</style>
 
 
 <body>
@@ -137,7 +185,7 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                                 </li>
                                                 <li class="mega-menu-item active services-mega-wrapper">
                                                     <a href="#" class="  mega-menu-link d-xl-flex" id="servicesBtn">
-                                                        SERVICES 
+                                                        SERVICES
                                                         <i class="bi bi-chevron-down ps-2 d-none d-xl-flex"></i>
                                                         <!-- <span class="arrow-icon"></span> -->
                                                     </a>
@@ -156,7 +204,8 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                                                     data-panel="printing-panel">Printing <span>›</span>
                                                                 </li>
                                                                 <li class="side-item has-child"
-                                                                    data-panel="value-panel">Value Addition <span>›</span>
+                                                                    data-panel="value-panel">Value Addition
+                                                                    <span>›</span>
                                                                 </li>
                                                                 <li class="side-item has-child"
                                                                     data-panel="croset-panel">Croset Fabrics
@@ -194,7 +243,8 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                                                                         Stitch</a></li>
                                                                                 <li><a href="ribbon-work.html">Ribbon
                                                                                         Work</a></li>
-                                                                                <li><a href="cording-work.html">Codding Work</a></li>
+                                                                                <li><a href="cording-work.html">Codding
+                                                                                        Work</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
@@ -365,44 +415,48 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
 
                         <div class="col-lg-12 content-area">
                             <div class="ttm-service-single-content-area">
-                         
+
                                 <div class="ttm-service-description">
-                                    <h3>About Our Croset  Services</h3>
+                                    <h3>About Our Croset Services</h3>
                                     <p><b>Fabreen</b> brings the intricate beauty of <b>Croset </b> to modern fashion
                                         with high-precision craftsmanship. We specialize in creating delicate open-work
                                         patterns, ornamental borders, and rich textured motifs that add a unique,
-                                        artisanal touch to any fabric. Our Croset  services are designed to blend
+                                        artisanal touch to any fabric. Our Croset services are designed to blend
                                         traditional aesthetics with contemporary trends, ensuring every stitch is a
                                         masterpiece of detail.</p>
-                                    <p>Our facility is equipped to handle a variety of <b>Croset  techniques</b>, from
+                                    <p>Our facility is equipped to handle a variety of <b>Croset techniques</b>, from
                                         fine lace-like details to heavy thread-work for luxury apparel and home
                                         furnishings. By using premium quality yarns and maintaining strict tension
-                                        control, we ensure that our Croset  designs are not only visually stunning but
+                                        control, we ensure that our Croset designs are not only visually stunning but
                                         also durable and consistent. Whether it’s custom edging or full-surface
                                         textures, Fabreen delivers a high-end finish that sets your collection apart.
                                     </p>
                                     <div class="ttm-horizontal_sep width-100 margin_top35 margin_bottom35"></div>
- <div class="row">
-                                        <div class="col-md-3">
-                                            <!-- <img class="img-fluid auto_size" width="494" height="560"
-                                                src="images/single-img-13.jpg" alt="image"> -->
-                                            <img class="img-fluid auto_size services-img" width="350" height="300"
-                                                src="images/services/croset (1).jpeg" alt="image">
+                                    <div class="row">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                            <img class="img-fluid  services-img" src="images/services/croset (1).jpeg"
+                                                alt="services-05" style="height: 600px;">
                                         </div>
-                                        <div class="col-md-3">
-                                            <img class="img-fluid auto_size services-img" width="350" height="300"
-                                                src="images/services/croset (2).jpeg" alt="image">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+
+                                            <img class="img-fluid services-img" src="images/services/croset (2).jpeg"
+                                                alt="services-05" style="height: 600px;">
                                         </div>
-                                        <div class="col-md-3">
-                                            <img class="img-fluid auto_size services-img" width="350" height="300"
-                                                src="images/services/croset (3).jpeg" alt="image">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+
+                                            <img class="img-fluid services-img" src="images/services/croset (3).jpeg"
+                                                alt="services-05" style="height: 600px;">
                                         </div>
-                                        <div class="col-md-3">
-                                            <img class="img-fluid auto_size services-img" width="350" height="300"
-                                                src="images/services/croset (4).jpeg" alt="image">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+
+                                            <img class="img-fluid services-img" src="images/services/croset (4).jpeg"
+                                                alt="services-05" style="height: 600px;">
                                         </div>
                                     </div>
-
 
 
                                     <!-- <h3>Our Design Expertise</h3>
@@ -414,7 +468,7 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
 
 
                                     <div class="padding_top15 padding_bottom5">
-                                        <h3>Our Croset  Expertise</h3>
+                                        <h3>Our Croset Expertise</h3>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <ul class="ttm-list bullet-list margin_top15">
@@ -425,12 +479,12 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                                     </li>
                                                     <li>
                                                         <div class="ttm-list-li-content">
-                                                            Decorative Croset  borders and edge finishing
+                                                            Decorative Croset borders and edge finishing
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="ttm-list-li-content">
-                                                            Custom floral and geometric Croset  motifs
+                                                            Custom floral and geometric Croset motifs
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -454,96 +508,97 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                         </div>
                                     </div>
 
-
-
-
-
-
                                     <div class="ttm-horizontal_sep width-100 margin_top35 margin_bottom35"></div>
+
+
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <!-- <img class="img-fluid auto_size" width="494" height="560"
-                                                src="images/single-img-13.jpg" alt="image"> -->
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                             <img class="img-fluid auto_size services-img" width="494" height="560"
                                                 src="images/services/croset (9).jpeg" alt="image">
                                         </div>
-                                        <div class="col-md-8">
+
+                                        
+                                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                                             <div>
-                                                         <h3>Skilled Croset  Artisans</h3>
-                                            <p>At Fabreen, our <b>Croset </b> excellence is a result of our highly
-                                                trained artisans
-                                                who master the art of intricate thread-work. Our team is expert in
-                                                translating
-                                                complex design sketches into beautiful textured patterns, ensuring that
-                                                every lace detail and decorative border meets the premium standards
-                                                expected by luxury fashion houses.</p>
-                                            <p>Our workforce is our core strength. Each employee undergoes specialized
-                                                training in various Croset  techniques, focusing on <b>stitch
-                                                    consistency,
-                                                    tension balance, and pattern accuracy</b>. With extensive hands-on
-                                                experience,
-                                                our team ensures that even the most delicate Croset  motifs remain
-                                                durable
-                                                and perfectly aligned. This dedication to skill development allows
-                                                Fabreen
-                                                to deliver artisanal quality at an industrial scale, meeting the
-                                                sophisticated
-                                                needs of global fashion brands.</p>
-                                                    </div>
+                                                <h3>Skilled Croset Artisans</h3>
+                                                <p>At Fabreen, our <b>Croset </b> excellence is a result of our highly
+                                                    trained artisans
+                                                    who master the art of intricate thread-work. Our team is expert in
+                                                    translating
+                                                    complex design sketches into beautiful textured patterns, ensuring
+                                                    that
+                                                    every lace detail and decorative border meets the premium standards
+                                                    expected by luxury fashion houses.</p>
+                                                <p>Our workforce is our core strength. Each employee undergoes
+                                                    specialized
+                                                    training in various Croset techniques, focusing on <b>stitch
+                                                        consistency,
+                                                        tension balance, and pattern accuracy</b>. With extensive
+                                                    hands-on
+                                                    experience,
+                                                    our team ensures that even the most delicate Croset motifs remain
+                                                    durable
+                                                    and perfectly aligned. This dedication to skill development allows
+                                                    Fabreen
+                                                    to deliver artisanal quality at an industrial scale, meeting the
+                                                    sophisticated
+                                                    needs of global fashion brands.</p>
+                                            </div>
                                             <div class="res-767-margin_top30">
-                                                <h3>Quality Croset  Standards</h3>
+                                                <h3>Quality Croset Standards</h3>
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <ul
                                                             class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor margin_top15">
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Intricate Lace & Mesh Detailing
+                                                                <div class="ttm-list-li-content">Intricate Lace & Mesh
+                                                                    Detailing
                                                                 </div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Consistent Stitch Tension Control</div>
+                                                                <div class="ttm-list-li-content">Consistent Stitch
+                                                                    Tension Control</div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Premium Thread & Yarn Selection</div>
+                                                                <div class="ttm-list-li-content">Premium Thread & Yarn
+                                                                    Selection</div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">High-Definition Textured Motifs</div>
+                                                                <div class="ttm-list-li-content">High-Definition
+                                                                    Textured Motifs</div>
                                                             </li>
-                                                            <!-- <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Perfect Edge & Border Finishing</div>
-                                                            </li> -->
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <ul
                                                             class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor margin_top15">
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Shrink-Resistant Thread-work</div>
+                                                                <div class="ttm-list-li-content">Shrink-Resistant
+                                                                    Thread-work</div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Geometric & Floral Open-work</div>
+                                                                <div class="ttm-list-li-content">Geometric & Floral
+                                                                    Open-work</div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Accurate Pattern Replication
+                                                                <div class="ttm-list-li-content">Accurate Pattern
+                                                                    Replication
                                                                 </div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Durable Construction for Apparel
+                                                                <div class="ttm-list-li-content">Durable Construction
+                                                                    for Apparel
                                                                 </div>
                                                             </li>
-                                                            <!-- <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Luxury Artisanal Aesthetics
-                                                                </div>
-                                                            </li> -->
                                                         </ul>
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                       <div class="ttm-horizontal_sep width-100 margin_top35 margin_bottom35"></div>
-                                                     <div class="row mt-4">
+                                    <div class="ttm-horizontal_sep width-100 margin_top35 margin_bottom35"></div>
+                                    <div class="row mt-4">
                                         <div class="col-md-12">
                                             <h3>Fully Trained Employees</h3>
                                             <p>Fabreen offers premium textile designing services with innovative
@@ -561,28 +616,32 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                             <!-- <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-dark margin_top15"
                                                 href="services-1.html">read more</a> -->
                                         </div>
-                                      
+
                                     </div>
- <div class="row mt-4">
-                                        <div class="col-md-3">
-                                           
-                                            <img class="img-fluid auto_size services-img" width="494" height="560"
-                                                src="images/services/croset (5).jpeg" alt="image">
+
+                                    <div class="row">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                            <img class="img-fluid  services-img" src="images/services/croset (5).jpeg"
+                                                alt="services-05" style="height: 600px;">
                                         </div>
-                                     <div class="col-md-3">
-                                           
-                                            <img class="img-fluid auto_size services-img" width="494" height="560"
-                                                src="images/services/croset (6).jpeg" alt="image">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+
+                                            <img class="img-fluid services-img" src="images/services/croset (6).jpeg"
+                                                alt="services-05" style="height: 600px;">
                                         </div>
-                                          <div class="col-md-3">
-                                          
-                                            <img class="img-fluid auto_size services-img" width="494" height="560"
-                                                src="images/services/croset (7).jpeg" alt="image">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+
+                                            <img class="img-fluid services-img" src="images/services/croset (7).jpeg"
+                                                alt="services-05" style="height: 600px;">
                                         </div>
-                                          <div class="col-md-3">
-                                            
-                                            <img class="img-fluid auto_size services-img" width="494" height="560"
-                                                src="images/services/croset (8).jpeg" alt="image">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+
+                                            <img class="img-fluid services-img" src="images/services/croset (8).jpeg"
+                                                alt="services-05" style="height: 600px;">
                                         </div>
                                     </div>
                                 </div>
@@ -777,86 +836,86 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
     <script src="js/main.js"></script>
     <!-- Javascript end-->
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const btn = document.getElementById('servicesBtn');
-    const menu = document.getElementById('servicesMenu');
-    const wrapper = document.querySelector('.services-mega-wrapper');
-    const sideItems = document.querySelectorAll('.side-item.has-child');
-    const allPanels = document.querySelectorAll('.panel-box');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btn = document.getElementById('servicesBtn');
+            const menu = document.getElementById('servicesMenu');
+            const wrapper = document.querySelector('.services-mega-wrapper');
+            const sideItems = document.querySelectorAll('.side-item.has-child');
+            const allPanels = document.querySelectorAll('.panel-box');
 
-    let isClickedOpen = false; // 👈 click state
+            let isClickedOpen = false; // 👈 click state
 
-    /* =========================
-       CLICK (DESKTOP + MOBILE)
-    ========================== */
-    btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+            /* =========================
+               CLICK (DESKTOP + MOBILE)
+            ========================== */
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-        isClickedOpen = !isClickedOpen;
+                isClickedOpen = !isClickedOpen;
 
-        if (isClickedOpen) {
-            menu.classList.add('is-visible');
-        } else {
-            closeMenu();
-        }
-    });
+                if (isClickedOpen) {
+                    menu.classList.add('is-visible');
+                } else {
+                    closeMenu();
+                }
+            });
 
-    /* =========================
-       HOVER (DESKTOP)
-    ========================== */
-    wrapper.addEventListener('mouseenter', function () {
-        menu.classList.add('is-visible');
-    });
+            /* =========================
+               HOVER (DESKTOP)
+            ========================== */
+            wrapper.addEventListener('mouseenter', function () {
+                menu.classList.add('is-visible');
+            });
 
-    wrapper.addEventListener('mouseleave', function () {
-        if (!isClickedOpen) {
-            closeMenu();
-        }
-    });
+            wrapper.addEventListener('mouseleave', function () {
+                if (!isClickedOpen) {
+                    closeMenu();
+                }
+            });
 
-    /* =========================
-       SIDE PANEL CLICK
-    ========================== */
-    sideItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.stopPropagation();
+            /* =========================
+               SIDE PANEL CLICK
+            ========================== */
+            sideItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.stopPropagation();
 
-            isClickedOpen = true;
-            menu.classList.add('is-visible', 'expanded');
+                    isClickedOpen = true;
+                    menu.classList.add('is-visible', 'expanded');
 
-            sideItems.forEach(i => i.classList.remove('active'));
-            allPanels.forEach(p => p.classList.remove('active'));
+                    sideItems.forEach(i => i.classList.remove('active'));
+                    allPanels.forEach(p => p.classList.remove('active'));
 
-            this.classList.add('active');
-            const target = this.getAttribute('data-panel');
-            document.getElementById(target).classList.add('active');
+                    this.classList.add('active');
+                    const target = this.getAttribute('data-panel');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+
+            /* =========================
+               CLICK OUTSIDE CLOSE
+            ========================== */
+            document.addEventListener('click', function () {
+                closeMenu();
+            });
+
+            menu.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+
+            /* =========================
+               CLOSE FUNCTION
+            ========================== */
+            function closeMenu() {
+                isClickedOpen = false;
+                menu.classList.remove('is-visible', 'expanded');
+                sideItems.forEach(i => i.classList.remove('active'));
+                allPanels.forEach(p => p.classList.remove('active'));
+            }
         });
-    });
-
-    /* =========================
-       CLICK OUTSIDE CLOSE
-    ========================== */
-    document.addEventListener('click', function () {
-        closeMenu();
-    });
-
-    menu.addEventListener('click', function (e) {
-        e.stopPropagation();
-    });
-
-    /* =========================
-       CLOSE FUNCTION
-    ========================== */
-    function closeMenu() {
-        isClickedOpen = false;
-        menu.classList.remove('is-visible', 'expanded');
-        sideItems.forEach(i => i.classList.remove('active'));
-        allPanels.forEach(p => p.classList.remove('active'));
-    }
-});
-</script>
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -871,7 +930,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     </script>
-  <script>
+    <script>
         jQuery(function ($) {
 
             /* PrettyPhoto auto bind for images */

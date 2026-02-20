@@ -25,10 +25,58 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/megamenu.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+<style>
+    @media (max-width: 991px) {
+        .pin-spacer {
+            padding: 0 !important;
+            height: auto !important;
+            display: block !important;
+        }
 
+        .ttm-featured-wrapper.services-scroll {
+            height: auto !important;
+            margin-bottom: 20px !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .services-img {
+            height: 265px !important;
+            margin-bottom: 11px !important;
+            display: block !important;
+            position: relative !important;
+            object-fit: cover !important;
+        }
+
+        .ttm-service-description {
+            padding-top: 10px !important;
+            margin-top: 5px !important;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .ttm-featured-wrapper.services-scroll {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            width: 100% !important;
+        }
+
+        .services-img {
+            width: 365px !important;
+            height: 265px !important;
+            margin-bottom: 0px !important;
+            object-fit: cover !important;
+        }
+    }
+</style>
 
 
 <body>
@@ -136,7 +184,7 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                                 </li>
                                                 <li class="mega-menu-item active services-mega-wrapper">
                                                     <a href="#" class="  mega-menu-link d-xl-flex" id="servicesBtn">
-                                                        SERVICES 
+                                                        SERVICES
                                                         <i class="bi bi-chevron-down ps-2 d-none d-xl-flex"></i>
                                                         <!-- <span class="arrow-icon"></span> -->
                                                     </a>
@@ -155,7 +203,8 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                                                     data-panel="printing-panel">Printing <span>›</span>
                                                                 </li>
                                                                 <li class="side-item has-child"
-                                                                    data-panel="value-panel">Value Addition <span>›</span>
+                                                                    data-panel="value-panel">Value Addition
+                                                                    <span>›</span>
                                                                 </li>
                                                                 <li class="side-item has-child"
                                                                     data-panel="croset-panel">Croset Fabrics
@@ -193,7 +242,8 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                                                                         Stitch</a></li>
                                                                                 <li><a href="ribbon-work.html">Ribbon
                                                                                         Work</a></li>
-                                                                                <li><a href="cording-work.html">Codding Work</a></li>
+                                                                                <li><a href="cording-work.html">Codding
+                                                                                        Work</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
@@ -361,7 +411,7 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                 <div class="container">
                     <!-- row -->
                     <div class="row">
-                       <!-- <div class="col-lg-4 widget-area sidebar-left">
+                        <!-- <div class="col-lg-4 widget-area sidebar-left">
 
                             <aside class="widget widget-nav-menu">
                                 <ul>
@@ -468,9 +518,9 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                         </div> -->
                         <div class="col-lg-8 content-area">
                             <div class="ttm-service-single-content-area">
-                            
+
                                 <div class="ttm-service-description">
-                                 <h3>About Our Fusing Services</h3>
+                                    <h3>About Our Fusing Services</h3>
                                     <p><b>Fabreen</b> provides industrial-grade <b>Fabric Fusing</b> solutions
                                         engineered to enhance the structural integrity and aesthetic appeal of
                                         textiles. Our facility utilizes advanced continuous fusing technology to
@@ -483,27 +533,37 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                         necessary crispness and durability required by global fashion and
                                         industrial apparel brands.</p>
                                     <div class="ttm-horizontal_sep width-100 margin_top35 margin_bottom35"></div>
-                                   <div class="row">
-                                     <div class="col-md-3">
-                                            <!-- <img class="img-fluid auto_size" width="494" height="560"
-                                                src="images/single-img-13.jpg" alt="image"> -->
-                                            <img class="img-fluid auto_size services-img" width="350" height="300"
-                                                src="images/services/crushing&fusing (5).jpeg" alt="image">
+                                   
+                                    <div class="row">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                            <img class="img-fluid  services-img"
+                                                src="images/services/crushing&fusing (5).jpeg" alt="services-05"
+                                                style="height: 600px;">
                                         </div>
-                                        <div class="col-md-3">
-                                            <img class="img-fluid auto_size services-img" width="350" height="300"
-                                                src="images/services/crushing&fusing (6).jpeg" alt="image">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+
+                                            <img class="img-fluid services-img"
+                                                src="images/services/crushing&fusing (6).jpeg" alt="services-05"
+                                                style="height: 600px;">
                                         </div>
-                                        <div class="col-md-3">
-                                            <img class="img-fluid auto_size services-img" width="350" height="300"
-                                                src="images/services/crushing&fusing (7).jpeg" alt="image">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+
+                                            <img class="img-fluid services-img"
+                                                src="images/services/crushing&fusing (7).jpeg" alt="services-05"
+                                                style="height: 600px;">
                                         </div>
-                                        <div class="col-md-3">
-                                            <img class="img-fluid auto_size services-img" width="350" height="300"
-                                                src="images/services/crushing&fusing (8).jpeg" alt="image">
+                                        <div
+                                            class="ttm-featured-wrapper margin_bottom35 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+
+                                            <img class="img-fluid services-img"
+                                                src="images/services/crushing&fusing (8).jpeg" alt="services-05"
+                                                style="height: 600px;">
                                         </div>
-                                        </div>
-                             
+                                    </div>
+
 
 
 
@@ -584,11 +644,11 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                             <!-- <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-dark margin_top15"
                                                 href="services-1.html">read more</a> -->
                                         </div>
-                                       
+
                                     </div>
                                     <div class="ttm-horizontal_sep width-100 margin_top35 margin_bottom35"></div>
                                     <div class="row">
-                                        
+
                                         <div class="col-md-12">
                                             <div class="res-767-margin_top30">
                                                 <h3>Quality Fusing Standards</h3>
@@ -597,20 +657,25 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                                         <ul
                                                             class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor margin_top15">
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">High-Strength Interlining Bonding
+                                                                <div class="ttm-list-li-content">High-Strength
+                                                                    Interlining Bonding
                                                                 </div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Zero Bubble & Crease Guarantee</div>
+                                                                <div class="ttm-list-li-content">Zero Bubble & Crease
+                                                                    Guarantee</div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Precision Heat & Pressure Control</div>
+                                                                <div class="ttm-list-li-content">Precision Heat &
+                                                                    Pressure Control</div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Uniform Adhesive Distribution</div>
+                                                                <div class="ttm-list-li-content">Uniform Adhesive
+                                                                    Distribution</div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Durable Finish for Collars & Cuffs</div>
+                                                                <div class="ttm-list-li-content">Durable Finish for
+                                                                    Collars & Cuffs</div>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -618,21 +683,26 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                                         <ul
                                                             class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor margin_top15">
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Anti-Strike-Through Technology</div>
+                                                                <div class="ttm-list-li-content">Anti-Strike-Through
+                                                                    Technology</div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Shrinkage & Distortion Prevention</div>
+                                                                <div class="ttm-list-li-content">Shrinkage & Distortion
+                                                                    Prevention</div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Stable Foundation for All Fabrics
+                                                                <div class="ttm-list-li-content">Stable Foundation for
+                                                                    All Fabrics
                                                                 </div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Bulk Production Consistency
+                                                                <div class="ttm-list-li-content">Bulk Production
+                                                                    Consistency
                                                                 </div>
                                                             </li>
                                                             <li><i class="ti ti-check"></i>
-                                                                <div class="ttm-list-li-content">Post-Wash Shape Retention
+                                                                <div class="ttm-list-li-content">Post-Wash Shape
+                                                                    Retention
                                                                 </div>
                                                             </li>
                                                         </ul>
@@ -834,86 +904,86 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
     <script src="js/main.js"></script>
     <!-- Javascript end-->
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const btn = document.getElementById('servicesBtn');
-    const menu = document.getElementById('servicesMenu');
-    const wrapper = document.querySelector('.services-mega-wrapper');
-    const sideItems = document.querySelectorAll('.side-item.has-child');
-    const allPanels = document.querySelectorAll('.panel-box');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btn = document.getElementById('servicesBtn');
+            const menu = document.getElementById('servicesMenu');
+            const wrapper = document.querySelector('.services-mega-wrapper');
+            const sideItems = document.querySelectorAll('.side-item.has-child');
+            const allPanels = document.querySelectorAll('.panel-box');
 
-    let isClickedOpen = false; // 👈 click state
+            let isClickedOpen = false; // 👈 click state
 
-    /* =========================
-       CLICK (DESKTOP + MOBILE)
-    ========================== */
-    btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+            /* =========================
+               CLICK (DESKTOP + MOBILE)
+            ========================== */
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-        isClickedOpen = !isClickedOpen;
+                isClickedOpen = !isClickedOpen;
 
-        if (isClickedOpen) {
-            menu.classList.add('is-visible');
-        } else {
-            closeMenu();
-        }
-    });
+                if (isClickedOpen) {
+                    menu.classList.add('is-visible');
+                } else {
+                    closeMenu();
+                }
+            });
 
-    /* =========================
-       HOVER (DESKTOP)
-    ========================== */
-    wrapper.addEventListener('mouseenter', function () {
-        menu.classList.add('is-visible');
-    });
+            /* =========================
+               HOVER (DESKTOP)
+            ========================== */
+            wrapper.addEventListener('mouseenter', function () {
+                menu.classList.add('is-visible');
+            });
 
-    wrapper.addEventListener('mouseleave', function () {
-        if (!isClickedOpen) {
-            closeMenu();
-        }
-    });
+            wrapper.addEventListener('mouseleave', function () {
+                if (!isClickedOpen) {
+                    closeMenu();
+                }
+            });
 
-    /* =========================
-       SIDE PANEL CLICK
-    ========================== */
-    sideItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.stopPropagation();
+            /* =========================
+               SIDE PANEL CLICK
+            ========================== */
+            sideItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.stopPropagation();
 
-            isClickedOpen = true;
-            menu.classList.add('is-visible', 'expanded');
+                    isClickedOpen = true;
+                    menu.classList.add('is-visible', 'expanded');
 
-            sideItems.forEach(i => i.classList.remove('active'));
-            allPanels.forEach(p => p.classList.remove('active'));
+                    sideItems.forEach(i => i.classList.remove('active'));
+                    allPanels.forEach(p => p.classList.remove('active'));
 
-            this.classList.add('active');
-            const target = this.getAttribute('data-panel');
-            document.getElementById(target).classList.add('active');
+                    this.classList.add('active');
+                    const target = this.getAttribute('data-panel');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+
+            /* =========================
+               CLICK OUTSIDE CLOSE
+            ========================== */
+            document.addEventListener('click', function () {
+                closeMenu();
+            });
+
+            menu.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+
+            /* =========================
+               CLOSE FUNCTION
+            ========================== */
+            function closeMenu() {
+                isClickedOpen = false;
+                menu.classList.remove('is-visible', 'expanded');
+                sideItems.forEach(i => i.classList.remove('active'));
+                allPanels.forEach(p => p.classList.remove('active'));
+            }
         });
-    });
-
-    /* =========================
-       CLICK OUTSIDE CLOSE
-    ========================== */
-    document.addEventListener('click', function () {
-        closeMenu();
-    });
-
-    menu.addEventListener('click', function (e) {
-        e.stopPropagation();
-    });
-
-    /* =========================
-       CLOSE FUNCTION
-    ========================== */
-    function closeMenu() {
-        isClickedOpen = false;
-        menu.classList.remove('is-visible', 'expanded');
-        sideItems.forEach(i => i.classList.remove('active'));
-        allPanels.forEach(p => p.classList.remove('active'));
-    }
-});
-</script>
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -928,7 +998,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     </script>
-  <script>
+    <script>
         jQuery(function ($) {
 
             /* PrettyPhoto auto bind for images */
