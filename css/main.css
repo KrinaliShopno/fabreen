@@ -4893,7 +4893,7 @@ section.error-404 .page-content p {
 .gallery-grid {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
-        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
     gap: 20px;
 }
 
@@ -5264,7 +5264,70 @@ section.error-404 .page-content p {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 /* hitarthi header dropdown css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* hitarthi conntact us css add */
 .widget-contact-action {

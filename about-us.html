@@ -25,7 +25,10 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/megamenu.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* ===============================
    MORE THAN FABRIC – BRAND STORY
@@ -102,8 +105,8 @@
         }
 
         /* ===============================
-   FABREEN MANIFESTO – CORE PHILOSOPHY
-================================ */
+                     FABREEN MANIFESTO – CORE PHILOSOPHY
+            ================================ */
 
         .fabreen-manifesto {
             padding: 60px 0;
@@ -329,7 +332,7 @@
                                                 </li>
                                                 <li class="mega-menu-item  services-mega-wrapper">
                                                     <a href="#" class="mega-menu-link d-xl-flex" id="servicesBtn">
-                                                        SERVICES 
+                                                        SERVICES
                                                         <i class="bi bi-chevron-down ps-2 d-none d-xl-flex"></i>
                                                         <!-- <span class="arrow-icon"></span> -->
                                                     </a>
@@ -348,7 +351,8 @@
                                                                     data-panel="printing-panel">Printing <span>›</span>
                                                                 </li>
                                                                 <li class="side-item has-child"
-                                                                    data-panel="value-panel">Value Addition <span>›</span>
+                                                                    data-panel="value-panel">Value Addition
+                                                                    <span>›</span>
                                                                 </li>
                                                                 <li class="side-item has-child"
                                                                     data-panel="croset-panel">Croset Fabrics
@@ -386,7 +390,8 @@
                                                                                         Stitch</a></li>
                                                                                 <li><a href="ribbon-work.html">Ribbon
                                                                                         Work</a></li>
-                                                                                <li><a href="cording-work.html">Codding Work</a></li>
+                                                                                <li><a href="cording-work.html">Codding
+                                                                                        Work</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
@@ -684,15 +689,13 @@
                 </div>
             </section>
 
+
+
             <section class="fabreen-trust">
                 <div class="container">
-
-
-
                     <div class="row align-items-center">
 
-                        <!-- LEFT CONTENT -->
-                        <div class="col-lg-7">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-7">
                             <div class="trust-header">
                                 <h6>TRUSTED BY THE FASHION ECOSYSTEM</h6>
                                 <h2>Partnering Brands, Designers & <span>Export Markets</span></h2>
@@ -716,8 +719,7 @@
                             </ul>
                         </div>
 
-                        <!-- RIGHT HIGHLIGHT CARD -->
-                        <div class="col-lg-5 d-none d-lg-block">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-5 d-none d-lg-block">
                             <div class="trust-image">
                                 <img src="images/partnership.jpg" alt="Global Textile Industry">
                             </div>
@@ -727,7 +729,6 @@
 
                 </div>
             </section>
-
 
 
             <section class="about-wrapper-1">
@@ -771,20 +772,9 @@
                                 </div>
                             </div>
                         </section>
-
-
-
-
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
         </div>
 
 
@@ -903,6 +893,9 @@
                                 </ul>
                             </div>
                         </div>
+
+
+
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 widget-area">
                             <div class="widget newsletter_widget clearfix">
                                 <form id="info-form" class="newsletter-form" method="post" action="#"
@@ -919,6 +912,10 @@
                                 <div id="info-msg" style="margin-top:10px;"></div>
                             </div>
                         </div>
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -968,166 +965,166 @@
     <script src="js/jquery-isotope.js"></script>
     <script src="js/main.js"></script>
     <!-- Javascript end-->
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const btn = document.getElementById('servicesBtn');
-    const menu = document.getElementById('servicesMenu');
-    const wrapper = document.querySelector('.services-mega-wrapper');
-    const sideItems = document.querySelectorAll('.side-item.has-child');
-    const allPanels = document.querySelectorAll('.panel-box');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btn = document.getElementById('servicesBtn');
+            const menu = document.getElementById('servicesMenu');
+            const wrapper = document.querySelector('.services-mega-wrapper');
+            const sideItems = document.querySelectorAll('.side-item.has-child');
+            const allPanels = document.querySelectorAll('.panel-box');
 
-    let isClickedOpen = false; // 👈 click state
+            let isClickedOpen = false; // 👈 click state
 
-    /* =========================
-       CLICK (DESKTOP + MOBILE)
-    ========================== */
-    btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+            /* =========================
+               CLICK (DESKTOP + MOBILE)
+            ========================== */
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-        isClickedOpen = !isClickedOpen;
+                isClickedOpen = !isClickedOpen;
 
-        if (isClickedOpen) {
-            menu.classList.add('is-visible');
-        } else {
-            closeMenu();
-        }
-    });
+                if (isClickedOpen) {
+                    menu.classList.add('is-visible');
+                } else {
+                    closeMenu();
+                }
+            });
 
-    /* =========================
-       HOVER (DESKTOP)
-    ========================== */
-    wrapper.addEventListener('mouseenter', function () {
-        menu.classList.add('is-visible');
-    });
+            /* =========================
+               HOVER (DESKTOP)
+            ========================== */
+            wrapper.addEventListener('mouseenter', function () {
+                menu.classList.add('is-visible');
+            });
 
-    wrapper.addEventListener('mouseleave', function () {
-        if (!isClickedOpen) {
-            closeMenu();
-        }
-    });
+            wrapper.addEventListener('mouseleave', function () {
+                if (!isClickedOpen) {
+                    closeMenu();
+                }
+            });
 
-    /* =========================
-       SIDE PANEL CLICK
-    ========================== */
-    sideItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.stopPropagation();
+            /* =========================
+               SIDE PANEL CLICK
+            ========================== */
+            sideItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.stopPropagation();
 
-            isClickedOpen = true;
-            menu.classList.add('is-visible', 'expanded');
+                    isClickedOpen = true;
+                    menu.classList.add('is-visible', 'expanded');
 
-            sideItems.forEach(i => i.classList.remove('active'));
-            allPanels.forEach(p => p.classList.remove('active'));
+                    sideItems.forEach(i => i.classList.remove('active'));
+                    allPanels.forEach(p => p.classList.remove('active'));
 
-            this.classList.add('active');
-            const target = this.getAttribute('data-panel');
-            document.getElementById(target).classList.add('active');
+                    this.classList.add('active');
+                    const target = this.getAttribute('data-panel');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+
+            /* =========================
+               CLICK OUTSIDE CLOSE
+            ========================== */
+            document.addEventListener('click', function () {
+                closeMenu();
+            });
+
+            menu.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+
+            /* =========================
+               CLOSE FUNCTION
+            ========================== */
+            function closeMenu() {
+                isClickedOpen = false;
+                menu.classList.remove('is-visible', 'expanded');
+                sideItems.forEach(i => i.classList.remove('active'));
+                allPanels.forEach(p => p.classList.remove('active'));
+            }
         });
-    });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btn = document.getElementById('servicesBtn');
+            const menu = document.getElementById('servicesMenu');
+            const wrapper = document.querySelector('.services-mega-wrapper');
+            const sideItems = document.querySelectorAll('.side-item.has-child');
+            const allPanels = document.querySelectorAll('.panel-box');
 
-    /* =========================
-       CLICK OUTSIDE CLOSE
-    ========================== */
-    document.addEventListener('click', function () {
-        closeMenu();
-    });
+            let isClickedOpen = false; // 👈 click state
 
-    menu.addEventListener('click', function (e) {
-        e.stopPropagation();
-    });
+            /* =========================
+               CLICK (DESKTOP + MOBILE)
+            ========================== */
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-    /* =========================
-       CLOSE FUNCTION
-    ========================== */
-    function closeMenu() {
-        isClickedOpen = false;
-        menu.classList.remove('is-visible', 'expanded');
-        sideItems.forEach(i => i.classList.remove('active'));
-        allPanels.forEach(p => p.classList.remove('active'));
-    }
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const btn = document.getElementById('servicesBtn');
-    const menu = document.getElementById('servicesMenu');
-    const wrapper = document.querySelector('.services-mega-wrapper');
-    const sideItems = document.querySelectorAll('.side-item.has-child');
-    const allPanels = document.querySelectorAll('.panel-box');
+                isClickedOpen = !isClickedOpen;
 
-    let isClickedOpen = false; // 👈 click state
+                if (isClickedOpen) {
+                    menu.classList.add('is-visible');
+                } else {
+                    closeMenu();
+                }
+            });
 
-    /* =========================
-       CLICK (DESKTOP + MOBILE)
-    ========================== */
-    btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+            /* =========================
+               HOVER (DESKTOP)
+            ========================== */
+            wrapper.addEventListener('mouseenter', function () {
+                menu.classList.add('is-visible');
+            });
 
-        isClickedOpen = !isClickedOpen;
+            wrapper.addEventListener('mouseleave', function () {
+                if (!isClickedOpen) {
+                    closeMenu();
+                }
+            });
 
-        if (isClickedOpen) {
-            menu.classList.add('is-visible');
-        } else {
-            closeMenu();
-        }
-    });
+            /* =========================
+               SIDE PANEL CLICK
+            ========================== */
+            sideItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.stopPropagation();
 
-    /* =========================
-       HOVER (DESKTOP)
-    ========================== */
-    wrapper.addEventListener('mouseenter', function () {
-        menu.classList.add('is-visible');
-    });
+                    isClickedOpen = true;
+                    menu.classList.add('is-visible', 'expanded');
 
-    wrapper.addEventListener('mouseleave', function () {
-        if (!isClickedOpen) {
-            closeMenu();
-        }
-    });
+                    sideItems.forEach(i => i.classList.remove('active'));
+                    allPanels.forEach(p => p.classList.remove('active'));
 
-    /* =========================
-       SIDE PANEL CLICK
-    ========================== */
-    sideItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.stopPropagation();
+                    this.classList.add('active');
+                    const target = this.getAttribute('data-panel');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
 
-            isClickedOpen = true;
-            menu.classList.add('is-visible', 'expanded');
+            /* =========================
+               CLICK OUTSIDE CLOSE
+            ========================== */
+            document.addEventListener('click', function () {
+                closeMenu();
+            });
 
-            sideItems.forEach(i => i.classList.remove('active'));
-            allPanels.forEach(p => p.classList.remove('active'));
+            menu.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
 
-            this.classList.add('active');
-            const target = this.getAttribute('data-panel');
-            document.getElementById(target).classList.add('active');
+            /* =========================
+               CLOSE FUNCTION
+            ========================== */
+            function closeMenu() {
+                isClickedOpen = false;
+                menu.classList.remove('is-visible', 'expanded');
+                sideItems.forEach(i => i.classList.remove('active'));
+                allPanels.forEach(p => p.classList.remove('active'));
+            }
         });
-    });
-
-    /* =========================
-       CLICK OUTSIDE CLOSE
-    ========================== */
-    document.addEventListener('click', function () {
-        closeMenu();
-    });
-
-    menu.addEventListener('click', function (e) {
-        e.stopPropagation();
-    });
-
-    /* =========================
-       CLOSE FUNCTION
-    ========================== */
-    function closeMenu() {
-        isClickedOpen = false;
-        menu.classList.remove('is-visible', 'expanded');
-        sideItems.forEach(i => i.classList.remove('active'));
-        allPanels.forEach(p => p.classList.remove('active'));
-    }
-});
-</script>
+    </script>
 
 </body>
 

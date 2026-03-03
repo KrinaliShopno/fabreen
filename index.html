@@ -114,9 +114,153 @@
             display: none !important;
         }
     }
+
+
+
+
+
+
+
+
+    /* HEADER REPSONCIVE START */
+
+    @media screen and (max-width: 425px) {
+        .mega-dropdown-box {
+            width: 100% !important;
+            position: relative !important;
+            box-shadow: none !important;
+            border-top: 1px solid #ddd;
+        }
+
+        .dropdown-flex {
+            display: block !important;
+        }
+
+        .side-menu {
+            width: 100% !important;
+        }
+
+        .side-item {
+            padding: 12px 15px !important;
+            border-bottom: 1px solid #eee;
+            font-weight: 500;
+            background: #fff;
+        }
+
+        .content-display {
+            display: none;
+            width: 100% !important;
+            background: #f1fafa !important;
+
+            padding: 0 !important;
+            max-height: 220px;
+            overflow-y: auto;
+            border-bottom: 2px solid #00a1a1;
+        }
+
+        .active-mobile-view {
+            display: block !important;
+        }
+
+        .grid-layout {
+            display: block !important;
+            padding: 10px 15px !important;
+        }
+
+        .column h3 {
+            font-size: 14px !important;
+            color: #00a1a1 !important;
+            margin: 10px 0 5px 0 !important;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .column ul li {
+            padding: 8px 0 !important;
+            font-size: 14px !important;
+            list-style: none !important;
+        }
+    }
+
+    /* HEADER REPSONCIVE END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Footer Responcive*/
+    .newsletter-form input::placeholder {
+        color: rgba(255, 255, 255, 0.7) !important;
+        opacity: 1;
+    }
+
+    /* 2. Tablet View (2x2 Grid for Inputs) */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .newsletter-form {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr;
+            /* 2 columns */
+            gap: 15px;
+        }
+
+        .newsletter-form input,
+        .newsletter-form button {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin: 0 !important;
+        }
+    }
+
+    /* 3. Mobile View (Left Aligned Text) */
+    @media (max-width: 767px) {
+
+        .widget-footer .widget-title,
+        .widget-footer .textwidget,
+        .widget-footer ul,
+        .widget-footer li {
+            text-align: left !important;
+        }
+
+        .footer-logo {
+            display: block !important;
+            text-align: left !important;
+        }
+
+        .newsletter-form {
+            flex-direction: column !important;
+            display: flex !important;
+        }
+
+        .newsletter-form input {
+            width: 100% !important;
+            margin-bottom: 10px !important;
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            color: #fff !important;
+            /* border: 1px solid #444 !important; */
+            padding: 10px !important;
+        }
+
+        .newsletter-form button {
+            width: 100% !important;
+        }
+
+        .social-icons.text-lg-right {
+            text-align: left !important;
+            float: none !important;
+        }
+    }
 </style>
-
-
 
 <body>
 
@@ -1604,23 +1748,19 @@
                     </div>
                 </section>
             </div>
-
-
-
-
-
-
-
-
-
         </div><!--site-main end-->
+
+
+
+
+
 
 
         <!--footer start-->
         <footer class="footer widget-footer ttm-bgcolor-darkgrey ttm-textcolor-white clearfix">
             <div class="first-footer">
                 <div class="container">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 widget-area">
                             <div class="widget widget_text clearfix">
                                 <div class="d-sm-flex align-items-center">
@@ -1630,12 +1770,10 @@
                                                 width="170" src="images/FABREEN NEW LOGO (1).png" alt="image">
                                         </a>
                                     </div>
-                                    <div class="textwidget widget-text">
-                                        <p>Indian weavers of designer of furnishing fabrics is a textile manufacturer
-                                            founded in 2004 and renowned for new and stylish interpretations of natural
-                                            & organic fabrics.
-
-                                        </p>
+                                    <div class="textwidget widget-text ml-sm-3">
+                                        <p class="mb-0">Indian weavers of designer of furnishing fabrics is a textile
+                                            manufacturer founded in 2004 and renowned for new and stylish
+                                            interpretations of natural & organic fabrics.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1643,21 +1781,19 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 widget-area">
                             <div class="widget widget_social clearfix">
                                 <div class="social-icons text-lg-right">
-                                    <ul class="social-icons list-inline">
-                                        <li><a class="tooltip-top"
+                                    <ul class="social-icons list-inline mb-0">
+                                        <li class="list-inline-item"><a class="tooltip-top"
                                                 href="https://www.facebook.com/fabreen.garment.studio/" rel="noopener"
                                                 aria-label="facebook" data-tooltip="Facebook" target="_blank"><i
                                                     class="fa fa-facebook"></i></a></li>
-                                        <!-- <li><a class="tooltip-top" href="https://twitter.com/PreyanTechnosys"
-                                                rel="noopener" aria-label="twitter" data-tooltip="Twitter"
-                                                target="_blank"><i class="fa fa-twitter"></i></a></li> -->
-                                        <li><a class="tooltip-top"
+                                        <li class="list-inline-item"><a class="tooltip-top"
                                                 href="https://www.instagram.com/fabreen_lifestyle/?hl=en" rel="noopener"
                                                 aria-label="flickr" data-tooltip="Flickr" target="_blank"><i
                                                     class="fa fa-instagram"></i></a></li>
-                                        <li><a class="tooltip-top" href="https://www.linkedin.com/showcase/fabreen/"
-                                                rel="noopener" aria-label="linkedin" data-tooltip="Linkedin"
-                                                target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a class="tooltip-top"
+                                                href="https://www.linkedin.com/showcase/fabreen/" rel="noopener"
+                                                aria-label="linkedin" data-tooltip="Linkedin" target="_blank"><i
+                                                    class="fa fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1665,24 +1801,17 @@
                     </div>
                 </div>
             </div>
+
             <div class="second-footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                             <div class="widget widget_text margin_right10 clearfix">
-                                <h3 class="widget-title">About Us
-                                </h3>
+                                <h3 class="widget-title">About Us</h3>
                                 <div class="textwidget widget-text">
-                                    <div class="call_detail">
-                                        <div class="padding_top10 padding_bottom10">
-                                            <p>We are excited to be part of fair trade and the environmentally friendly
-                                                standards of the fashion industry and are constantly striving to
-                                                contribute to a healthy ecosystem.
-                                            </p>
-                                        </div>
-                                        <!-- <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-white w-100 text-center"
-                                            href="contact-us.html">Request Online Form</a> -->
-                                    </div>
+                                    <p>We are excited to be part of fair trade and the environmentally friendly
+                                        standards of the fashion industry and are constantly striving to contribute to a
+                                        healthy ecosystem.</p>
                                 </div>
                             </div>
                         </div>
@@ -1700,80 +1829,68 @@
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                             <div class="widget widget-recent-post clearfix">
                                 <h3 class="widget-title">Service Category</h3>
-                                <ul id="menu-footer-quick-links" class="menu">
-                                    Coming Soon Category !!!!!
-                                    <!-- <li><a href="weaving.html">Weaving</a></li>
-                                    <li><a href="designing.html">Designing</a></li>
-                                    <li><a href="fabric-printing.html">Printing</a></li>
-                                    <li><a href="manufacture.html">Manufacture</a></li>
-                                    <li><a href="stichfabric.html">Stich Fabric</a></li>
-                                    <li><a href="fabric-dyeing.html">Dyeing</a></li> -->
+                                <ul class="menu">
+                                    <li>Coming Soon Category !!!!!</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                             <div class="widget widget-latest-tweets clearfix">
                                 <h3 class="widget-title">Contact Us</h3>
-                                <ul class="widget_contact_wrapper">
-                                    <li>
+                                <ul class="widget_contact_wrapper" style="list-style: none; padding: 0;">
+                                    <li class="mb-2">
                                         <a href="https://share.google/ggd1aNJSZ78hgsSpo" target="_blank"
-                                            style=" text-decoration: none;">
-                                            <i class="ttm-textcolor-skincolor fa fa-map-marker"></i>
-                                            B-6027-28, 6th Floor, Lift : 6 & 7, Ashirvad Textile Market, Saroli, Bhavani
-                                            Industrial Estate, Surat, Gujarat 395010
+                                            style="text-decoration: none;">
+                                            <i class="ttm-textcolor-skincolor fa fa-map-marker mr-2"></i> B-6027-28, 6th
+                                            Floor, Ashirvad Textile Market, Saroli, Surat, Gujarat 395010
                                         </a>
                                     </li>
-                                    <li><i class="ttm-textcolor-skincolor fa fa-phone"></i><a
-                                            href="tel:+919825304172">(+91)
-                                            9825304172</a></li>
-                                    <li><i class="ttm-textcolor-skincolor fa fa-envelope-o"></i>
-                                        <a href="mailto:fabreenlifestyle@gmail.com">fabreenlifestyle@gmail.com</a>
-                                    </li>
+                                    <li class="mb-2"><i class="ttm-textcolor-skincolor fa fa-phone mr-2"></i><a
+                                            href="tel:+919825304172">(+91) 9825304172</a></li>
+                                    <li><i class="ttm-textcolor-skincolor fa fa-envelope-o mr-2"></i><a
+                                            href="mailto:fabreenlifestyle@gmail.com">fabreenlifestyle@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
+
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 widget-area">
                             <div class="widget newsletter_widget clearfix">
                                 <form id="info-form" class="newsletter-form" method="post" action="#"
-                                    data-mailchimp="true"
                                     style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
-                                    <input type="text" name="NAME" id="txtname" placeholder="Your Name ">
-                                    <input type="tel" name="CONTACT" id="txtcontact" placeholder="Contact No. ">
-                                    <input type="email" name="EMAIL" id="txtemail" placeholder="Email ID *" required="">
+                                    <input class="form-control" type="text" name="NAME" id="txtname"
+                                        placeholder="Your Name">
+                                    <input class="form-control" type="tel" name="CONTACT" id="txtcontact"
+                                        placeholder="Contact No.">
+                                    <input class="form-control" type="email" name="EMAIL" id="txtemail"
+                                        placeholder="Email ID *" required="">
                                     <button
-                                        class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-icon-btn-right ttm-btn-style-fill ttm-btn-color-skincolor"
-                                        type="submit" style="padding:10px 20px;">For More Information<i
-                                            class="fa fa-caret-right" aria-hidden="true"></i></button>
+                                        class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor"
+                                        type="submit">
+                                        For More Information <i class="fa fa-caret-right"></i>
+                                    </button>
                                 </form>
-                                <div id="info-msg" style="margin-top:10px;"></div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+
             <div class="bottom-footer-text copyright">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                                <!-- <span class="cpy-text">Copyright © 2021 <a href="#"
-                                        class="ttm-textcolor-skincolor font-weight-500">Fablio </a> All rights
-                                    reserved.</span> -->
-
-                                <p class="text-center"> © Copyright 2025, All Rights<a class=""
-                                        style="text-decoration: none; color: #42aeb0;" href="/" target="_blank"> Fabreen
-                                    </a>| Designed by: <a class="text-white" style="text-decoration: none;"
-                                        href="https://shopnoecommerce.com/" target="_blank">Shopno
-                                        Ecommerce</a></p>
-
-                            </div>
+                        <div class="col-lg-12 text-center">
+                            <p>© Copyright 2025, All Rights <a style="text-decoration: none; color: #42aeb0;"
+                                    href="/">Fabreen</a> | Designed by: Shopno Ecommerce</p>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
         <!--footer end-->
+
+
+
+
 
         <!--back-to-top start-->
         <a id="totop" href="#top">
@@ -2077,8 +2194,43 @@
         });
     </script>
 
+    <!-- RESPONCIVE HEADER SCRIPT FOR MOBILE SCREEN  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const servicesBtn = document.getElementById('servicesBtn');
+            const servicesMenu = document.getElementById('servicesMenu');
+            if (servicesBtn) {
+                servicesBtn.onclick = function (e) {
+                    if (window.innerWidth <= 425) {
+                        e.preventDefault();
+                        servicesMenu.style.display = (servicesMenu.style.display === 'block') ? 'none' : 'block';
+                    }
+                };
+            }
+            const sideItems = document.querySelectorAll('.side-item');
+            sideItems.forEach(item => {
+                item.onclick = function (e) {
+                    if (window.innerWidth <= 425) {
+                        e.preventDefault();
+                        const panelId = this.getAttribute('data-panel');
+                        const targetPanel = document.getElementById(panelId);
 
-
+                        if (targetPanel) {
+                            if (targetPanel.classList.contains('active-mobile-view')) {
+                                targetPanel.classList.remove('active-mobile-view');
+                            } else {
+                                document.querySelectorAll('.content-display').forEach(p => {
+                                    p.classList.remove('active-mobile-view');
+                                });
+                                this.after(targetPanel);
+                                targetPanel.classList.add('active-mobile-view');
+                            }
+                        }
+                    }
+                };
+            });
+        });
+    </script>
 </body>
 
 <!-- Mirrored from themetechmount.com/html/fablio/home-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 10:57:52 GMT -->
