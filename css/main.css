@@ -3392,7 +3392,6 @@ nav.main-menu .megamenu-content .title {
     right: -15px;
     height: 17px;
     z-index: -1;
-    6
 }
 
 @media only screen and (max-width: 1200px) {
@@ -5264,70 +5263,7 @@ section.error-404 .page-content p {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
 /* hitarthi header dropdown css end */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* hitarthi conntact us css add */
 .widget-contact-action {
@@ -5402,4 +5338,254 @@ section.error-404 .page-content p {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* hitarthi conntact us css end 
+/* hitarthi conntact us css end */
+
+
+    .procedure-row {
+        position: relative;
+        overflow: visible;
+        padding-bottom: 60px;
+    }
+
+    .featured-imagebox {
+        text-align: center;
+        z-index: 1;
+    }
+
+    .featured-thumbnail {
+        position: relative;
+        z-index: 5;
+    }
+
+    .panel-box .column{
+        padding: 0px 30px;
+    }
+
+
+    /* ================= WAVE & CORNERS ================= */
+    .procedure-row canvas {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        opacity: 0.8;
+    }
+
+    /* Moving Process Icon */
+    .process-icon {
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        padding: 8px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px !important;
+        height: 38px;
+    }
+
+    /* --- Professional Corner Icons --- */
+    .wave-corner-icon {
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 4;
+        top: 245px;
+        /* Wave line height matching */
+    }
+
+    /* Left side: Clean Minimal Red Dot */
+    .corner-left {
+        left: 40px;
+        width: 8px;
+        height: 28px;
+        border: 3px solid #42aeb0;
+        top: 240px;
+    }
+
+    /* Right side: Professional Cotton/Thread Spool Icon */
+    .corner-right {
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+        border: 1px solid #eee;
+        top: 225px;
+    }
+
+    .corner-right i {
+        color: #42aeb0;
+        font-size: 24px;
+    }
+@media (max-width: 768px) {
+
+    .content-display {
+        display: none !important;
+    }
+
+    .mobile-accordion-panel {
+        background: #eef6f6;
+        padding: 0px 10px;
+        border-top: 1px solid #ddd;
+        border-bottom: 2px solid #42aeb0;
+    }
+
+    .mobile-accordion-panel h3 {
+        font-size: 14px;
+        color: #00a1a1;
+        margin-top: 10px;
+        border-bottom: 1px dashed #ccc;
+    }
+
+    .mobile-accordion-panel ul {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .mobile-accordion-panel li {
+        list-style: none;
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    .side-item.mobile-open {
+        background: #f1fafa;
+        color: #00a1a1;
+        font-weight: 500;
+    }
+}
+    @media (max-width: 1024px) {
+
+        .procedure-row canvas,
+        .process-icon,
+        .wave-corner-icon {
+            display: none !important;
+        }
+    }
+
+    /* HEADER REPSONCIVE START */
+
+    @media screen and (max-width: 425px) {
+        .mega-dropdown-box {
+            width: 100% !important;
+            /* position: relative !important; */
+            /* box-shadow: none !important; */
+            /* border-top: 1px solid #ddd; */
+        }
+
+        .dropdown-flex {
+            display: block !important;
+        }
+
+        .side-menu {
+            width: 100% !important;
+        }
+
+        .side-item {
+            padding: 10px 25px !important;
+            border-bottom: 1px solid #eee;
+            font-weight: 400;
+            background: #fff;
+        }
+
+        .content-display {
+            display: none;
+            width: 100% !important;
+            background: #f1fafa !important;
+
+            padding: 0 !important;
+            max-height: 220px;
+            overflow-y: auto;
+            border-bottom: 2px solid #00a1a1;
+        }
+
+        .active-mobile-view {
+            display: block !important;
+        }
+
+        .grid-layout {
+            display: block !important;
+            /* padding: 10px 15px !important; */
+        }
+
+        .column h3 {
+            font-size: 14px !important;
+            color: #00a1a1 !important;
+            margin: 10px 0 5px 0 !important;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .column ul li {
+            padding: 8px 0 !important;
+            font-size: 14px !important;
+            list-style: none !important;
+        }
+    }
+
+    /* HEADER REPSONCIVE END 
+
+    /*Footer Responcive*/
+    .newsletter-form input::placeholder {
+        color: rgba(255, 255, 255, 0.7) !important;
+        opacity: 1;
+    }
+
+    /* 2. Tablet View (2x2 Grid for Inputs) */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .newsletter-form {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr;
+            /* 2 columns */
+            gap: 15px;
+        }
+
+        .newsletter-form input,
+        .newsletter-form button {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin: 0 !important;
+        }
+    }
+
+    /* 3. Mobile View (Left Aligned Text) */
+    @media (max-width: 767px) {
+
+        .widget-footer .widget-title,
+        .widget-footer .textwidget,
+        .widget-footer ul,
+        .widget-footer li {
+            text-align: left !important;
+        }
+
+        .footer-logo {
+            display: block !important;
+            text-align: left !important;
+        }
+
+        .newsletter-form {
+            flex-direction: column !important;
+            display: flex !important;
+        }
+
+        .newsletter-form input {
+            width: 100% !important;
+            margin-bottom: 10px !important;
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            color: #fff !important;
+            /* border: 1px solid #444 !important; */
+            padding: 10px !important;
+        }
+
+        .newsletter-form button {
+            width: 100% !important;
+        }
+
+        .social-icons.text-lg-right {
+            text-align: left !important;
+            float: none !important;
+        }
+    }

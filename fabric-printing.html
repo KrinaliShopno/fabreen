@@ -746,6 +746,57 @@ document.addEventListener('DOMContentLoaded', function () {
 
         });
     </script>
+        <!-- RESPONCIVE HEADER SCRIPT FOR MOBILE SCREEN  -->
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    if (window.innerWidth > 768) return;
+
+    const sideItems = document.querySelectorAll(".side-item.has-child");
+
+    sideItems.forEach(item => {
+
+        item.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const panelId = this.getAttribute("data-panel");
+            const panel = document.getElementById(panelId);
+
+            if (!panel) return;
+
+            // If already open → close
+            if (this.classList.contains("mobile-open")) {
+                this.classList.remove("mobile-open");
+                panel.remove();
+                return;
+            }
+
+            // Close all first
+            document.querySelectorAll(".mobile-open").forEach(el => {
+                el.classList.remove("mobile-open");
+            });
+
+            document.querySelectorAll(".panel-box").forEach(p => {
+                if (p.parentElement.classList.contains("side-menu")) {
+                    p.remove();
+                }
+            });
+
+            // Mark open
+            this.classList.add("mobile-open");
+
+            // Clone panel and insert below item
+            const clone = panel.cloneNode(true);
+            clone.style.display = "block";
+            clone.classList.add("mobile-accordion-panel");
+
+            this.after(clone);
+        });
+
+    });
+
+});
+</script>
 </body>
 
 <!-- Mirrored from themetechmount.com/html/fablio/fabric-printing.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 10:57:58 GMT -->
