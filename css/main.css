@@ -3450,7 +3450,7 @@ nav.main-menu .megamenu-content .title {
 
 @media only screen and (max-width: 1024px) {
     .banner_slider .slide {
-        height: 460px;
+        height: 340px;
     }
 
     .slide .slide__content--headings h2 {
@@ -3564,7 +3564,7 @@ nav.main-menu .megamenu-content .title {
 @media only screen and (max-width: 600px) {
 
     .banner_slider .slide {
-        height: 320px;
+        height: 190px;
     }
 
     .slide .ttm-btn {
@@ -3628,7 +3628,7 @@ nav.main-menu .megamenu-content .title {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .banner_slider .slide {
-        height: 600px;
+        height: 450px;
     }
 
 }
@@ -3642,7 +3642,7 @@ nav.main-menu .megamenu-content .title {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgb(0 0 0 / 23%);
+    /* background: rgb(0 0 0 / 23%); */
     /* ← change color here */
     z-index: 1;
 }
