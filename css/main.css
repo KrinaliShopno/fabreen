@@ -3642,7 +3642,7 @@ nav.main-menu .megamenu-content .title {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.527);
+    background: rgb(0 0 0 / 23%);
     /* ← change color here */
     z-index: 1;
 }
@@ -3676,7 +3676,7 @@ nav.main-menu .megamenu-content .title {
     background-size: cover;
     background-position: center;
     transform-origin: center;
-    animation: heroZoomInOut 16s ease-in-out infinite;
+    /* animation: heroZoomInOut 16s ease-in-out infinite; */
     will-change: transform;
     /* smooth performance */
 }
