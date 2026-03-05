@@ -3344,7 +3344,9 @@ nav.main-menu .megamenu-content .title {
     margin-bottom: 25px;
     text-align: start;
 }
-
+.banner_slider_wrapper .slick-list.draggable{
+    height: 100% !important; 
+}
 .banner_slider_2 .slide .slide__content--headings h2.border_text {
     line-height: 170px;
     letter-spacing: 0px;
@@ -3622,7 +3624,7 @@ nav.main-menu .megamenu-content .title {
 
 @media only screen and (max-width: 400px) {
     .banner_slider .slide {
-        height: 300px;
+        height: 145px;
     }
 }
 
