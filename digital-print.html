@@ -412,21 +412,9 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                             <div class="ttm-service-single-content-area">
                                 <div class="ttm-service-description row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <h3>About Our Digital Print Designing Services</h3>
-                                        <p>Digital Print is a modern fabric printing technique that delivers
-                                            high-resolution
-                                            designs, vibrant colors, and precise detailing directly onto fabric. It is
-                                            ideal
-                                            for custom designs, small to large production runs, and premium fashion
-                                            applications.</p>
-                                        <p>Digital printing is an advanced textile printing method where designs are
-                                            printed
-                                            directly onto fabric using state-of-the-art digital machines. Unlike
-                                            traditional
-                                            printing methods, digital print does not require screens or plates, allowing
-                                            for
-                                            faster production, greater design flexibility, and superior print accuracy.
-                                        </p>
+                                        <h3>Precision Without Limits – High-Definition Artistry with Infinite Colors.
+                                        </h3>
+
                                     </div>
 
 
@@ -460,7 +448,7 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
 
                                     <div class="ttm-horizontal_sep width-100 margin_top25 margin_bottom35"></div>
 
-                                    <div class="container">
+                                    <!-- <div class="container">
                                         <div class="row">
                                             <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-9">
                                                 <h3>Fully Trained Employees</h3>
@@ -534,6 +522,69 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                                 </div>
                                             </div>
                                         </div>
+                                    </div> -->
+
+                                    <div class="row mt-5 align-items-center">
+                                        <div class="col-12 col-lg-9 col-xl-8">
+                                            <div class="mb-4">
+                                                <p class="text-muted mb-0">
+                                                    <span class="highlight-span fw-semibold d-block mb-2">
+                                                        Photographic Clarity :
+                                                    </span>
+                                                    Our Digital
+                                                    Printing unit uses advanced inkjet technology to print
+                                                    designs with 100% accuracy. From intricate hand-painted motifs to
+                                                    realistic
+                                                    photographic
+                                                    textures, we bring "Idea to Fruition" with stunning detail.
+                                                </p>
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <p class="text-muted mb-0">
+                                                    <span class="highlight-span fw-semibold d-block mb-2">
+                                                        Unlimited Color Palette :
+                                                    </span>
+                                                    Unlike traditional methods that limit you to a few colors, Digital
+                                                    Printing allows for millions of color gradients and shades in a
+                                                    single design, giving
+                                                    designers total creative freedom.
+
+                                                </p>
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <p class="text-muted mb-0">
+                                                    <span class="highlight-span fw-semibold d-block mb-2">
+                                                        Eco-Friendly Production :
+                                                    </span>
+                                                    Digital printing is a sustainable choice. It uses significantly
+                                                    less water and creates minimal ink waste compared to traditional
+                                                    screen printing,
+                                                    aligning with Fabreen’s vision of green manufacturing.
+                                                </p>
+                                            </div>
+
+                                            <div>
+                                                <p class="text-muted mb-0">
+                                                    <span class="highlight-span fw-semibold d-block mb-2">
+                                                        Rapid Prototyping :
+                                                    </span>
+                                                    Since there are no screens to engrave, we can switch between
+                                                    designs instantly. This makes it ideal for boutique collections,
+                                                    high-fashion runways, and
+                                                    "Fast Fashion" trends that require quick turnarounds.
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12 col-md-6 col-lg-3 col-xl-4 text-center mt-4 mt-lg-0">
+                                            <img src="images/services/digital-print (1).jpeg" alt="image"
+                                                class="img-fluid shadow-sm w-100 services-img auto_size"
+                                                style="height:430px; object-fit:cover;">
+                                        </div>
+
                                     </div>
 
 
@@ -903,57 +954,57 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
 
         });
     </script>
-        <!-- RESPONCIVE HEADER SCRIPT FOR MOBILE SCREEN  -->
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
+    <!-- RESPONCIVE HEADER SCRIPT FOR MOBILE SCREEN  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
 
-    if (window.innerWidth > 768) return;
+            if (window.innerWidth > 768) return;
 
-    const sideItems = document.querySelectorAll(".side-item.has-child");
+            const sideItems = document.querySelectorAll(".side-item.has-child");
 
-    sideItems.forEach(item => {
+            sideItems.forEach(item => {
 
-        item.addEventListener("click", function (e) {
-            e.preventDefault();
+                item.addEventListener("click", function (e) {
+                    e.preventDefault();
 
-            const panelId = this.getAttribute("data-panel");
-            const panel = document.getElementById(panelId);
+                    const panelId = this.getAttribute("data-panel");
+                    const panel = document.getElementById(panelId);
 
-            if (!panel) return;
+                    if (!panel) return;
 
-            // If already open → close
-            if (this.classList.contains("mobile-open")) {
-                this.classList.remove("mobile-open");
-                panel.remove();
-                return;
-            }
+                    // If already open → close
+                    if (this.classList.contains("mobile-open")) {
+                        this.classList.remove("mobile-open");
+                        panel.remove();
+                        return;
+                    }
 
-            // Close all first
-            document.querySelectorAll(".mobile-open").forEach(el => {
-                el.classList.remove("mobile-open");
+                    // Close all first
+                    document.querySelectorAll(".mobile-open").forEach(el => {
+                        el.classList.remove("mobile-open");
+                    });
+
+                    document.querySelectorAll(".panel-box").forEach(p => {
+                        if (p.parentElement.classList.contains("side-menu")) {
+                            p.remove();
+                        }
+                    });
+
+                    // Mark open
+                    this.classList.add("mobile-open");
+
+                    // Clone panel and insert below item
+                    const clone = panel.cloneNode(true);
+                    clone.style.display = "block";
+                    clone.classList.add("mobile-accordion-panel");
+
+                    this.after(clone);
+                });
+
             });
 
-            document.querySelectorAll(".panel-box").forEach(p => {
-                if (p.parentElement.classList.contains("side-menu")) {
-                    p.remove();
-                }
-            });
-
-            // Mark open
-            this.classList.add("mobile-open");
-
-            // Clone panel and insert below item
-            const clone = panel.cloneNode(true);
-            clone.style.display = "block";
-            clone.classList.add("mobile-accordion-panel");
-
-            this.after(clone);
         });
-
-    });
-
-});
-</script>
+    </script>
 </body>
 
 <!-- Mirrored from themetechmount.com/html/fablio/fabric-dyeing.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 10:57:59 GMT -->
