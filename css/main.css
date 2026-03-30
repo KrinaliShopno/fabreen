@@ -5997,6 +5997,79 @@ section.error-404 .page-content p {
             line-height: 1.85;
             max-width: 820px;
         }
+        .instagram-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+/* TITLE */
+.insta-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.insta-sub {
+  color: #42aeb0;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.insta-grid a {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.insta-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.insta-grid a:hover img {
+  transform: scale(1.08);
+}
+
+/* BUTTON */
+.insta-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 25px;
+  border: 1px solid #42aeb0;
+  color: #42aeb0;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.insta-btn:hover {
+  background: #42aeb0;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+  .insta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:576px){
+  .insta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insta-title {
+    font-size: 26px;
+  }
+}
 
         /* RESPONSIVE */
         @media(max-width: 991px) {
