@@ -724,7 +724,7 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
 
 
         <!--footer start-->
-          <footer class="footer widget-footer ttm-bgcolor-darkgrey ttm-textcolor-white clearfix">
+        <footer class="footer widget-footer ttm-bgcolor-darkgrey ttm-textcolor-white clearfix">
             <div class="first-footer">
                 <div class="container">
                     <div class="row">
@@ -844,13 +844,15 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
                                 <form id="info-form" class="newsletter-form" method="post" action="#"
                                     data-mailchimp="true"
                                     style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
-                                    <input type="text" name="NAME" id="txtname" placeholder="Your Name ">
-                                    <input type="tel" name="CONTACT" id="txtcontact" placeholder="Contact No. ">
-                                    <input type="email" name="EMAIL" id="txtemail" placeholder="Email ID *" required="">
-                                    <button
+
+
+                                    <input type="text" name="name" placeholder="Your Name " required>
+                                    <input type="tel" name="phone" placeholder="Contact No. " maxlength="10" required>
+                                    <input type="email" name="email" placeholder="Email ID *" required="">
+                                    <button type="submit"
                                         class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-icon-btn-right ttm-btn-style-fill ttm-btn-color-skincolor"
-                                        type="submit" style="padding:10px 20px;">For More Information<i
-                                            class="fa fa-caret-right" aria-hidden="true"></i></button>
+                                        style="padding:10px 20px;">For More Information<i class="fa fa-caret-right"
+                                            aria-hidden="true"></i></button>
                                 </form>
                                 <div id="info-msg" style="margin-top:10px;"></div>
                             </div>
@@ -905,6 +907,41 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
     <script src="js/jquery-isotope.js"></script>
     <script src="js/main.js"></script>
     <!-- Javascript end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init({
+            publicKey: "H_MtT6XB7uHDuwz2F"
+        });
+        document.getElementById("info-form").addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            const params = {
+                name: document.querySelector('[name="name"]').value,
+                phone: document.querySelector('[name="phone"]').value,
+                email: document.querySelector('[name="email"]').value,
+            };
+
+            emailjs.send(
+                "service_465lcrs",
+                "template_hfqk727",
+                params
+            )
+                .then(function (response) {
+
+                    alert("Email sent successfully");
+                    document.getElementById("contact-form").reset();
+
+                })
+                .catch(function (error) {
+
+                    console.log(error);
+                    // alert("Error: " + error.text);
+
+                });
+        });
+    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
