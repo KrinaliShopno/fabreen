@@ -5633,20 +5633,20 @@ section.error-404 .page-content p {
         text-align: center;
     }
 
-    .header p {
+   .why-fabreen .header p {
         font-size: 12px;
         letter-spacing: 4px;
         color: #63bcbe;
         margin-bottom: 10px;
     }
 
-    .header h2 {
+    .why-fabreen .header h2 {
         font-size: 56px;
         font-weight: 800;
         color: white;
     }
 
-    .header h2 span {
+    .why-fabreen .header h2 span {
         color: #63bcbe;
     }
 
@@ -5668,13 +5668,13 @@ section.error-404 .page-content p {
     }
 
     /* items */
-    .item {
+    .why-fabreen .item {
         width: 24%;
         position: relative;
     }
 
     /* dot */
-    .dot {
+    .why-fabreen .dot {
         width: 12px;
         height: 12px;
         border: 2px solid #63bcbe;
@@ -5707,10 +5707,10 @@ section.error-404 .page-content p {
         color: #63bcbe;
     }
 
-    .icon {
+    .why-fabreen .icon {
         width: 50px;
         height: 50px;
-        background: #0b1b2b;
+        background: #63bcbe;
         border-radius: 12px;
         display: flex;
         align-items: center;
@@ -5718,8 +5718,8 @@ section.error-404 .page-content p {
         margin: 20px auto;
     }
 
-    .icon i {
-        color: #63bcbe;
+    .why-fabreen .icon i {
+        color: #ffffff;
         font-size: 20px;
     }
 
@@ -5729,7 +5729,7 @@ section.error-404 .page-content p {
         color: white;
     }
 
-    .item p {
+    .why-fabreen .item p {
         font-size: 14px;
         color: #94a3b8;
         line-height: 1.6;
@@ -5742,17 +5742,17 @@ section.error-404 .page-content p {
             gap: 40px;
         }
 
-        .item {
+        .why-fabreen .item {
             width: 45%;
         }
     }
 
     @media (max-width: 576px) {
-        .header h2 {
+        .why-fabreen .header h2 {
             font-size: 36px;
         }
 
-        .item {
+        .why-fabreen .item {
             width: 100%;
         }
 
