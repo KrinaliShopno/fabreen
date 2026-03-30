@@ -377,63 +377,63 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
 
                                         <div class="col-md-4">
                                             <span class="text-input">
-                                                <input type="text" id="cf_name" name="name" placeholder="Your Name *"
+                                                <input type="text" name="firstname" placeholder="Your Name *"
                                                     required>
                                             </span>
                                         </div>
 
                                         <div class="col-md-4">
                                             <span class="text-input">
-                                                <input type="email" id="cf_email" name="email"
+                                                <input type="email"  name="email"
                                                     placeholder="Your Email *" required>
                                             </span>
                                         </div>
 
                                         <div class="col-md-4">
                                             <span class="text-input">
-                                                <input type="tel" id="cf_phone" name="phone"
+                                                <input type="tel" name="phone"
                                                     placeholder="Phone Number *" maxlength="10" required>
                                             </span>
                                         </div>
 
                                         <div class="col-md-4">
                                             <span class="text-input">
-                                                <input type="text" id="cf_company" name="company_name"
+                                                <input type="text"  name="company_name"
                                                     placeholder="Company Name" required>
                                             </span>
                                         </div>
 
                                         <div class="col-md-4">
                                             <span class="text-input">
-                                                <input type="text" id="cf_gst" name="gst_no" placeholder="GST No *"
+                                                <input type="text"  name="gst_no" placeholder="GST No *"
                                                     required>
                                             </span>
                                         </div>
 
                                         <div class="col-md-4">
                                             <span class="text-input">
-                                                <input type="text" id="cf_suggested" name="suggested_by"
+                                                <input type="text"  name="suggested_by"
                                                     placeholder="Suggested By  *" required>
                                             </span>
                                         </div>
 
                                         <div class="col-md-4">
                                             <span class="text-input">
-                                                <input type="text" id="cf_city" name="city" placeholder="City *"
+                                                <input type="text"  name="city" placeholder="City *"
                                                     required>
                                             </span>
                                         </div>
 
                                         <div class="col-lg-12">
                                             <span class="text-input">
-                                                <textarea id="cf_message" name="message" rows="5"
+                                                <textarea  name="message" rows="5"
                                                     placeholder="Message  "></textarea>
                                             </span>
                                         </div>
 
                                         <div class="col-lg-12 text-center pt-3">
-                                            <button
-                                                class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor">
+                                            <button type="submit"
+                                                class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor">
                                                 Send Now
                                             </button>
                                         </div>
@@ -748,34 +748,43 @@ Indian weavers of designer of furnishing fabrics is a textile manufacturer found
     <script src="js/jquery-isotope.js"></script>
     <script src="js/main.js"></script>
     <!-- Javascript end-->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-        (function () {
-            emailjs.init("s48eTE9s_8VSQe5ad");
-        })();
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-        $("#contactForm").on("submit", function (e) {
+   <script>
+        emailjs.init({
+            publicKey: "H_MtT6XB7uHDuwz2F"
+        });
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+
             e.preventDefault();
 
-            const templateParams = {
-                name: $("#cf_name").val(),
-                email: $("#cf_email").val(),
-                phone: $("#cf_phone").val(),
-                company_name: $("#cf_company").val(),
-                gst_no: $("#cf_gst").val(),
-                suggested_by: $("#cf_suggested").val(),
-                city: $("#cf_city").val(),
-                message: $("#cf_message").val(),
+            const params = {
+                firstname: document.querySelector('[name="firstname"]').value,
+                email: document.querySelector('[name="email"]').value,
+                phone: document.querySelector('[name="phone"]').value,
+                company_name: document.querySelector('[name="company_name"]').value,
+                gst_no: document.querySelector('[name="gst_no"]').value,
+                suggested_by: document.querySelector('[name="suggested_by"]').value,
+                city: document.querySelector('[name="city"]').value,
+                message: document.querySelector('[name="message"]').value,
             };
 
-            emailjs.send("service_7e2oxqj", "template_rgfthf6", templateParams)
-                .then(() => {
-                    alert("✅ Contact Form Submitted Successfully!");
-                    $("#contactForm")[0].reset();
+            emailjs.send(
+                "service_465lcrs",
+                "template_clajqlu",
+                params
+            )
+                .then(function (response) {
+
+                    alert("Email sent successfully");
+                    document.getElementById("contact-form").reset();
+
                 })
-                .catch((error) => {
-                    alert("❌ Email sending failed!");
-                    console.error(error);
+                .catch(function (error) {
+
+                    console.log(error);
+                    alert("Error: " + error.text);
+
                 });
         });
     </script>
