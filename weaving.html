@@ -442,11 +442,12 @@
 
                                         <div
                                             class="ttm-featured-wrapper services-scroll margin_bottom40 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
-                                            <img class="services-img    "
-                                                src="images/services/Morden weaving machine 02.jpg" alt="services-05">
+                                            <!-- <img class="services-img    "
+                                                src="images/services/Morden weaving machine 02.jpg" alt="services-05"> -->
                                             <img class="services-img col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
-                                                src="images/services/Morden weaving machine.webp" alt="services-05">
+                                                src="images/services/Morden weaving machine.webp" alt="services-05" style="width: 100%;">
                                         </div>
+                                        
                                     </div>
 
                                     <div class="padding_top15 padding_bottom5">
@@ -913,7 +914,7 @@
         });
     </script>
 
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             gsap.registerPlugin(ScrollTrigger);
             const scrollContainer = document.querySelector(".ttm-featured-wrapper.services-scroll");
@@ -942,10 +943,14 @@
                     ScrollTrigger.getAll().forEach(st => st.kill());
                     gsap.set([scrollContainer, images, triggerElement], { clearProps: "all" });
                     gsap.set(".pin-spacer", { display: "none" });
-                });
+                }); 
             }
         });
-    </script>
+    </script> -->
+
+
+
+
     <!-- RESPONCIVE HEADER SCRIPT FOR MOBILE SCREEN  -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
